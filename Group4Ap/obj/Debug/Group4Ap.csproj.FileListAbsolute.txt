@@ -14,3 +14,9 @@ D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\G
 D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormServices.resources
 D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormInventory.resources
 D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormLogin.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormServiceOrders.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormReservations.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormMain.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormAvailableRooms.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormPayment.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormServiceRevenue.resources

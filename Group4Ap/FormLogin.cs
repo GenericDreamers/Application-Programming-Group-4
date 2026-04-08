@@ -45,11 +45,7 @@ namespace Group4Ap
 					LoginInfo.Role = "Guest";
 				}
 				MessageBox.Show("Đăng nhập thành công.");
-				//frmMain frm = new frmMain();
-				//frm.Show();
-				//temp going to FormInventory for testing
-				FormInventory f = new FormInventory();
-				f.Show();
+				this.Close();
 			}
 			else
 			{

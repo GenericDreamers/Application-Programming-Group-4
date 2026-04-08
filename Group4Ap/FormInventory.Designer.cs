@@ -29,7 +29,6 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			this.lOPBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.TKField = new System.Windows.Forms.TextBox();
 			this.TVPField = new System.Windows.Forms.TextBox();
 			this.MVPField = new System.Windows.Forms.TextBox();
@@ -40,9 +39,7 @@
 			this.employeesTableAdapter = new Group4Ap.HotelManagementDataSetTableAdapters.EmployeesTableAdapter();
 			this.label5 = new System.Windows.Forms.Label();
 			this.LCField = new System.Windows.Forms.DateTimePicker();
-			this.doDongHaiAPMidtermsDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.btnThoat = new System.Windows.Forms.Button();
-			this.pHIEUNHAPBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.employeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.hotelManagementDataSet = new Group4Ap.HotelManagementDataSet();
 			this.guestsTableAdapter = new Group4Ap.HotelManagementDataSetTableAdapters.GuestsTableAdapter();
@@ -64,19 +61,18 @@
 			this.lastChangeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.inventoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.inventoryTableAdapter = new Group4Ap.HotelManagementDataSetTableAdapters.InventoryTableAdapter();
-			((System.ComponentModel.ISupportInitialize)(this.lOPBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.doDongHaiAPMidtermsDataSetBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pHIEUNHAPBindingSource)).BeginInit();
+			this.lOPBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.doDongHaiAPMidtermsDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.pHIEUNHAPBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSet)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.guestsBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.inventoryBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.lOPBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.doDongHaiAPMidtermsDataSetBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pHIEUNHAPBindingSource)).BeginInit();
 			this.SuspendLayout();
-			// 
-			// lOPBindingSource
-			// 
-			this.lOPBindingSource.DataMember = "LOP";
 			// 
 			// TKField
 			// 
@@ -182,10 +178,6 @@
 			this.btnThoat.Text = "Thoát";
 			this.btnThoat.UseVisualStyleBackColor = true;
 			this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
-			// 
-			// pHIEUNHAPBindingSource
-			// 
-			this.pHIEUNHAPBindingSource.DataMember = "PHIEUNHAP";
 			// 
 			// employeesBindingSource
 			// 
@@ -363,6 +355,14 @@
 			// 
 			this.inventoryTableAdapter.ClearBeforeFill = true;
 			// 
+			// lOPBindingSource
+			// 
+			this.lOPBindingSource.DataMember = "LOP";
+			// 
+			// pHIEUNHAPBindingSource
+			// 
+			this.pHIEUNHAPBindingSource.DataMember = "PHIEUNHAP";
+			// 
 			// FormInventory
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -390,14 +390,14 @@
 			this.Name = "FormInventory";
 			this.Text = "FormInventory";
 			this.Load += new System.EventHandler(this.FormInventory_Load);
-			((System.ComponentModel.ISupportInitialize)(this.lOPBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.doDongHaiAPMidtermsDataSetBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pHIEUNHAPBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSet)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.guestsBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.inventoryBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.lOPBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.doDongHaiAPMidtermsDataSetBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pHIEUNHAPBindingSource)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

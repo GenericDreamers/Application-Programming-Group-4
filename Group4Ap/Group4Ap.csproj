@@ -49,6 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="databaseConnection.cs" />
+    <Compile Include="FormAvailableRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAvailableRooms.Designer.cs">
+      <DependentUpon>FormAvailableRooms.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEmployees.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,11 +85,35 @@
     <Compile Include="FormMiscSearch.Designer.cs">
       <DependentUpon>FormMiscSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPayment.Designer.cs">
+      <DependentUpon>FormPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReservations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReservations.Designer.cs">
+      <DependentUpon>FormReservations.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRooms.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormRooms.Designer.cs">
       <DependentUpon>FormRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormServiceOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServiceOrders.Designer.cs">
+      <DependentUpon>FormServiceOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormServiceRevenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServiceRevenue.Designer.cs">
+      <DependentUpon>FormServiceRevenue.cs</DependentUpon>
     </Compile>
     <Compile Include="FormServices.cs">
       <SubType>Form</SubType>
@@ -96,9 +126,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HotelManagementDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HotelManagementDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HotelManagementDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="LoginInfo.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAvailableRooms.resx">
+      <DependentUpon>FormAvailableRooms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEmployees.resx">
       <DependentUpon>FormEmployees.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,11 +158,26 @@
     <EmbeddedResource Include="FormMiscSearch.resx">
       <DependentUpon>FormMiscSearch.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormPayment.resx">
+      <DependentUpon>FormPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReservations.resx">
+      <DependentUpon>FormReservations.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRooms.resx">
       <DependentUpon>FormRooms.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormServiceOrders.resx">
+      <DependentUpon>FormServiceOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormServiceRevenue.resx">
+      <DependentUpon>FormServiceRevenue.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormServices.resx">
       <DependentUpon>FormServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -139,6 +198,17 @@
     </None>
     <None Include="HotelManagementDataSet.xss">
       <DependentUpon>HotelManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HotelManagementDataSet1.xsc">
+      <DependentUpon>HotelManagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HotelManagementDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HotelManagementDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HotelManagementDataSet1.xss">
+      <DependentUpon>HotelManagementDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

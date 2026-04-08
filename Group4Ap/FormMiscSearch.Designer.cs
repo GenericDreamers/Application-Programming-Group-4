@@ -30,14 +30,12 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			this.g2 = new System.Windows.Forms.GroupBox();
-			this.rBtnMI = new System.Windows.Forms.RadioButton();
+			this.rBtnBA = new System.Windows.Forms.RadioButton();
 			this.rBtnMCV = new System.Windows.Forms.RadioButton();
 			this.rBtnMLP = new System.Windows.Forms.RadioButton();
 			this.rBtnMTT = new System.Windows.Forms.RadioButton();
 			this.rBtnMT = new System.Windows.Forms.RadioButton();
 			this.btnThoat = new System.Windows.Forms.Button();
-			this.btnTim = new System.Windows.Forms.Button();
-			this.SearchField = new System.Windows.Forms.ComboBox();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.lblTitle = new System.Windows.Forms.Label();
 			this.pHIEUXUATBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -48,7 +46,7 @@
 			// 
 			// g2
 			// 
-			this.g2.Controls.Add(this.rBtnMI);
+			this.g2.Controls.Add(this.rBtnBA);
 			this.g2.Controls.Add(this.rBtnMCV);
 			this.g2.Controls.Add(this.rBtnMLP);
 			this.g2.Controls.Add(this.rBtnMTT);
@@ -59,18 +57,18 @@
 			this.g2.Size = new System.Drawing.Size(814, 74);
 			this.g2.TabIndex = 58;
 			this.g2.TabStop = false;
-			this.g2.Text = "Tìm kiếm theo";
+			this.g2.Text = "Xem thông tin ở bảng";
 			// 
-			// rBtnMI
+			// rBtnBA
 			// 
-			this.rBtnMI.AutoSize = true;
-			this.rBtnMI.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.rBtnMI.Location = new System.Drawing.Point(523, 32);
-			this.rBtnMI.Name = "rBtnMI";
-			this.rBtnMI.Size = new System.Drawing.Size(90, 24);
-			this.rBtnMI.TabIndex = 7;
-			this.rBtnMI.Text = "Mã item";
-			this.rBtnMI.UseVisualStyleBackColor = true;
+			this.rBtnBA.AutoSize = true;
+			this.rBtnBA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+			this.rBtnBA.Location = new System.Drawing.Point(655, 32);
+			this.rBtnBA.Name = "rBtnBA";
+			this.rBtnBA.Size = new System.Drawing.Size(100, 24);
+			this.rBtnBA.TabIndex = 7;
+			this.rBtnBA.Text = "Accounts";
+			this.rBtnBA.UseVisualStyleBackColor = true;
 			// 
 			// rBtnMCV
 			// 
@@ -78,9 +76,9 @@
 			this.rBtnMCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
 			this.rBtnMCV.Location = new System.Drawing.Point(335, 32);
 			this.rBtnMCV.Name = "rBtnMCV";
-			this.rBtnMCV.Size = new System.Drawing.Size(116, 24);
+			this.rBtnMCV.Size = new System.Drawing.Size(99, 24);
 			this.rBtnMCV.TabIndex = 6;
-			this.rBtnMCV.Text = "Mã chức vụ";
+			this.rBtnMCV.Text = "Positions";
 			this.rBtnMCV.UseVisualStyleBackColor = true;
 			// 
 			// rBtnMLP
@@ -89,20 +87,20 @@
 			this.rBtnMLP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
 			this.rBtnMLP.Location = new System.Drawing.Point(147, 32);
 			this.rBtnMLP.Name = "rBtnMLP";
-			this.rBtnMLP.Size = new System.Drawing.Size(134, 24);
+			this.rBtnMLP.Size = new System.Drawing.Size(119, 24);
 			this.rBtnMLP.TabIndex = 5;
-			this.rBtnMLP.Text = "Mã loại phòng";
+			this.rBtnMLP.Text = "RoomTypes";
 			this.rBtnMLP.UseVisualStyleBackColor = true;
 			// 
 			// rBtnMTT
 			// 
 			this.rBtnMTT.AutoSize = true;
 			this.rBtnMTT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.rBtnMTT.Location = new System.Drawing.Point(672, 32);
+			this.rBtnMTT.Location = new System.Drawing.Point(489, 32);
 			this.rBtnMTT.Name = "rBtnMTT";
-			this.rBtnMTT.Size = new System.Drawing.Size(136, 24);
+			this.rBtnMTT.Size = new System.Drawing.Size(104, 24);
 			this.rBtnMTT.TabIndex = 4;
-			this.rBtnMTT.Text = "Mã thanh toán";
+			this.rBtnMTT.Text = "Payments";
 			this.rBtnMTT.UseVisualStyleBackColor = true;
 			// 
 			// rBtnMT
@@ -112,16 +110,16 @@
 			this.rBtnMT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
 			this.rBtnMT.Location = new System.Drawing.Point(6, 32);
 			this.rBtnMT.Name = "rBtnMT";
-			this.rBtnMT.Size = new System.Drawing.Size(81, 24);
+			this.rBtnMT.Size = new System.Drawing.Size(85, 24);
 			this.rBtnMT.TabIndex = 2;
 			this.rBtnMT.TabStop = true;
-			this.rBtnMT.Text = "Mã tòa";
+			this.rBtnMT.Text = "Towers";
 			this.rBtnMT.UseVisualStyleBackColor = true;
 			// 
 			// btnThoat
 			// 
 			this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnThoat.Location = new System.Drawing.Point(927, 156);
+			this.btnThoat.Location = new System.Drawing.Point(927, 102);
 			this.btnThoat.Name = "btnThoat";
 			this.btnThoat.Size = new System.Drawing.Size(235, 50);
 			this.btnThoat.TabIndex = 57;
@@ -129,35 +127,15 @@
 			this.btnThoat.UseVisualStyleBackColor = true;
 			this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
 			// 
-			// btnTim
-			// 
-			this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnTim.Location = new System.Drawing.Point(927, 78);
-			this.btnTim.Name = "btnTim";
-			this.btnTim.Size = new System.Drawing.Size(235, 50);
-			this.btnTim.TabIndex = 56;
-			this.btnTim.Text = "Tìm kiếm";
-			this.btnTim.UseVisualStyleBackColor = true;
-			this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
-			// 
-			// SearchField
-			// 
-			this.SearchField.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-			this.SearchField.FormattingEnabled = true;
-			this.SearchField.Location = new System.Drawing.Point(79, 169);
-			this.SearchField.Name = "SearchField";
-			this.SearchField.Size = new System.Drawing.Size(814, 37);
-			this.SearchField.TabIndex = 55;
-			// 
 			// dataGridView1
 			// 
 			this.dataGridView1.AllowUserToDeleteRows = false;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(43, 230);
+			this.dataGridView1.Location = new System.Drawing.Point(43, 170);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowHeadersWidth = 51;
 			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(1119, 271);
+			this.dataGridView1.Size = new System.Drawing.Size(1119, 331);
 			this.dataGridView1.TabIndex = 54;
 			// 
 			// lblTitle
@@ -168,9 +146,9 @@
 			this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold);
 			this.lblTitle.Location = new System.Drawing.Point(360, 9);
 			this.lblTitle.Name = "lblTitle";
-			this.lblTitle.Size = new System.Drawing.Size(863, 46);
+			this.lblTitle.Size = new System.Drawing.Size(464, 46);
 			this.lblTitle.TabIndex = 53;
-			this.lblTitle.Text = "Tìm kiếm thông tin khác (form này chưa chốt)";
+			this.lblTitle.Text = "Tìm kiếm thông tin khác";
 			// 
 			// pHIEUXUATBindingSource
 			// 
@@ -183,8 +161,6 @@
 			this.ClientSize = new System.Drawing.Size(1222, 521);
 			this.Controls.Add(this.g2);
 			this.Controls.Add(this.btnThoat);
-			this.Controls.Add(this.btnTim);
-			this.Controls.Add(this.SearchField);
 			this.Controls.Add(this.dataGridView1);
 			this.Controls.Add(this.lblTitle);
 			this.Name = "FormMiscSearch";
@@ -202,14 +178,12 @@
 		#endregion
 
 		private System.Windows.Forms.GroupBox g2;
-		private System.Windows.Forms.RadioButton rBtnMI;
+		private System.Windows.Forms.RadioButton rBtnBA;
 		private System.Windows.Forms.RadioButton rBtnMCV;
 		private System.Windows.Forms.RadioButton rBtnMLP;
 		private System.Windows.Forms.RadioButton rBtnMTT;
 		private System.Windows.Forms.RadioButton rBtnMT;
 		private System.Windows.Forms.Button btnThoat;
-		private System.Windows.Forms.Button btnTim;
-		private System.Windows.Forms.ComboBox SearchField;
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.Label lblTitle;
 		private System.Windows.Forms.BindingSource pHIEUXUATBindingSource;

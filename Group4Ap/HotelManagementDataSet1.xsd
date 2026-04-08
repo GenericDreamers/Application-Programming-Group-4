@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HotelManagementDataSet1" targetNamespace="http://tempuri.org/HotelManagementDataSet1.xsd" xmlns:mstns="http://tempuri.org/HotelManagementDataSet1.xsd" xmlns="http://tempuri.org/HotelManagementDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HotelManagementConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HotelManagementConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Group4Ap.Properties.Settings.GlobalReference.Default.HotelManagementConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ReservationInvoiceDetailsTableAdapter" GeneratorDataComponentClassName="ReservationInvoiceDetailsTableAdapter" Name="ReservationInvoiceDetails" UserDataComponentName="ReservationInvoiceDetailsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelManagementConnectionString (Settings)" DbObjectName="HotelManagement.dbo.ReservationInvoiceDetails" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ReserID, GuestID, GuestName, RoomID, RoomTypeName, RoomPricePerDay, StayDuration, RoomCost, ServiceCost, TotalCost, PaymentStatus FROM dbo.ReservationInvoiceDetails</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ReserID" DataSetColumn="ReserID" />
+              <Mapping SourceColumn="GuestID" DataSetColumn="GuestID" />
+              <Mapping SourceColumn="GuestName" DataSetColumn="GuestName" />
+              <Mapping SourceColumn="RoomID" DataSetColumn="RoomID" />
+              <Mapping SourceColumn="RoomTypeName" DataSetColumn="RoomTypeName" />
+              <Mapping SourceColumn="RoomPricePerDay" DataSetColumn="RoomPricePerDay" />
+              <Mapping SourceColumn="StayDuration" DataSetColumn="StayDuration" />
+              <Mapping SourceColumn="RoomCost" DataSetColumn="RoomCost" />
+              <Mapping SourceColumn="ServiceCost" DataSetColumn="ServiceCost" />
+              <Mapping SourceColumn="TotalCost" DataSetColumn="TotalCost" />
+              <Mapping SourceColumn="PaymentStatus" DataSetColumn="PaymentStatus" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HotelManagementDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="HotelManagementDataSet1" msprop:Generator_DataSetName="HotelManagementDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ReservationInvoiceDetails" msprop:Generator_RowEvHandlerName="ReservationInvoiceDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="ReservationInvoiceDetailsRowDeleted" msprop:Generator_RowDeletingName="ReservationInvoiceDetailsRowDeleting" msprop:Generator_RowEvArgName="ReservationInvoiceDetailsRowChangeEvent" msprop:Generator_TablePropName="ReservationInvoiceDetails" msprop:Generator_RowChangedName="ReservationInvoiceDetailsRowChanged" msprop:Generator_RowChangingName="ReservationInvoiceDetailsRowChanging" msprop:Generator_TableClassName="ReservationInvoiceDetailsDataTable" msprop:Generator_RowClassName="ReservationInvoiceDetailsRow" msprop:Generator_TableVarName="tableReservationInvoiceDetails" msprop:Generator_UserTableName="ReservationInvoiceDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ReserID" msprop:Generator_ColumnPropNameInRow="ReserID" msprop:Generator_ColumnPropNameInTable="ReserIDColumn" msprop:Generator_ColumnVarNameInTable="columnReserID" msprop:Generator_UserColumnName="ReserID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GuestID" msprop:Generator_ColumnPropNameInRow="GuestID" msprop:Generator_ColumnPropNameInTable="GuestIDColumn" msprop:Generator_ColumnVarNameInTable="columnGuestID" msprop:Generator_UserColumnName="GuestID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GuestName" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="GuestName" msprop:Generator_ColumnPropNameInTable="GuestNameColumn" msprop:Generator_ColumnVarNameInTable="columnGuestName" msprop:Generator_UserColumnName="GuestName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RoomID" msprop:Generator_ColumnPropNameInRow="RoomID" msprop:Generator_ColumnPropNameInTable="RoomIDColumn" msprop:Generator_ColumnVarNameInTable="columnRoomID" msprop:Generator_UserColumnName="RoomID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RoomTypeName" msprop:Generator_ColumnPropNameInRow="RoomTypeName" msprop:Generator_ColumnPropNameInTable="RoomTypeNameColumn" msprop:Generator_ColumnVarNameInTable="columnRoomTypeName" msprop:Generator_UserColumnName="RoomTypeName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RoomPricePerDay" msprop:Generator_ColumnPropNameInRow="RoomPricePerDay" msprop:Generator_ColumnPropNameInTable="RoomPricePerDayColumn" msprop:Generator_ColumnVarNameInTable="columnRoomPricePerDay" msprop:Generator_UserColumnName="RoomPricePerDay" type="xs:decimal" />
+              <xs:element name="StayDuration" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="StayDuration" msprop:Generator_ColumnPropNameInTable="StayDurationColumn" msprop:Generator_ColumnVarNameInTable="columnStayDuration" msprop:Generator_UserColumnName="StayDuration" type="xs:int" minOccurs="0" />
+              <xs:element name="RoomCost" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="RoomCost" msprop:Generator_ColumnPropNameInTable="RoomCostColumn" msprop:Generator_ColumnVarNameInTable="columnRoomCost" msprop:Generator_UserColumnName="RoomCost" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ServiceCost" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="ServiceCost" msprop:Generator_ColumnPropNameInTable="ServiceCostColumn" msprop:Generator_ColumnVarNameInTable="columnServiceCost" msprop:Generator_UserColumnName="ServiceCost" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalCost" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="TotalCost" msprop:Generator_ColumnPropNameInTable="TotalCostColumn" msprop:Generator_ColumnVarNameInTable="columnTotalCost" msprop:Generator_UserColumnName="TotalCost" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PaymentStatus" msprop:Generator_ColumnPropNameInRow="PaymentStatus" msprop:Generator_ColumnPropNameInTable="PaymentStatusColumn" msprop:Generator_ColumnVarNameInTable="columnPaymentStatus" msprop:Generator_UserColumnName="PaymentStatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ReservationInvoiceDetails" />
+      <xs:field xpath="mstns:ReserID" />
+      <xs:field xpath="mstns:GuestID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

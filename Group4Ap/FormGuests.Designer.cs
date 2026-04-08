@@ -28,20 +28,29 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.DCField = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.EmailField = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
-			this.doDongHaiAPMidtermsDataSetBindingSource = new System.Windows.Forms.BindingSource();
-			this.lOPBindingSource = new System.Windows.Forms.BindingSource();
+			this.doDongHaiAPMidtermsDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.lOPBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.label3 = new System.Windows.Forms.Label();
-			this.pHIEUNHAPBindingSource = new System.Windows.Forms.BindingSource();
+			this.pHIEUNHAPBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.btnThoat = new System.Windows.Forms.Button();
 			this.btnSua = new System.Windows.Forms.Button();
 			this.btnXoa = new System.Windows.Forms.Button();
 			this.btnLuu = new System.Windows.Forms.Button();
 			this.btnTao = new System.Windows.Forms.Button();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.guestIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.guestsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.hotelManagementDataSet = new Group4Ap.HotelManagementDataSet();
 			this.TCField = new System.Windows.Forms.TextBox();
 			this.TDField = new System.Windows.Forms.TextBox();
 			this.MKField = new System.Windows.Forms.TextBox();
@@ -49,22 +58,14 @@
 			this.lblHoTen = new System.Windows.Forms.Label();
 			this.lblMSV = new System.Windows.Forms.Label();
 			this.lblTitle = new System.Windows.Forms.Label();
-			this.hotelManagementDataSet = new Group4Ap.HotelManagementDataSet();
-			this.guestsBindingSource = new System.Windows.Forms.BindingSource();
 			this.guestsTableAdapter = new Group4Ap.HotelManagementDataSetTableAdapters.GuestsTableAdapter();
-			this.guestIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.DTField = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.doDongHaiAPMidtermsDataSetBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.lOPBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pHIEUNHAPBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSet)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.guestsBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSet)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// DCField
@@ -195,6 +196,64 @@
 			this.dataGridView1.Size = new System.Drawing.Size(1085, 271);
 			this.dataGridView1.TabIndex = 58;
 			// 
+			// guestIDDataGridViewTextBoxColumn
+			// 
+			this.guestIDDataGridViewTextBoxColumn.DataPropertyName = "GuestID";
+			this.guestIDDataGridViewTextBoxColumn.HeaderText = "GuestID";
+			this.guestIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+			this.guestIDDataGridViewTextBoxColumn.Name = "guestIDDataGridViewTextBoxColumn";
+			this.guestIDDataGridViewTextBoxColumn.Width = 125;
+			// 
+			// firstNameDataGridViewTextBoxColumn
+			// 
+			this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+			this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
+			this.firstNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+			this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+			this.firstNameDataGridViewTextBoxColumn.Width = 125;
+			// 
+			// lastNameDataGridViewTextBoxColumn
+			// 
+			this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+			this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
+			this.lastNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+			this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+			this.lastNameDataGridViewTextBoxColumn.Width = 125;
+			// 
+			// emailDataGridViewTextBoxColumn
+			// 
+			this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+			this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+			this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
+			this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+			this.emailDataGridViewTextBoxColumn.Width = 125;
+			// 
+			// phoneNumberDataGridViewTextBoxColumn
+			// 
+			this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber";
+			this.phoneNumberDataGridViewTextBoxColumn.HeaderText = "PhoneNumber";
+			this.phoneNumberDataGridViewTextBoxColumn.MinimumWidth = 6;
+			this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
+			this.phoneNumberDataGridViewTextBoxColumn.Width = 125;
+			// 
+			// addressDataGridViewTextBoxColumn
+			// 
+			this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+			this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+			this.addressDataGridViewTextBoxColumn.MinimumWidth = 6;
+			this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+			this.addressDataGridViewTextBoxColumn.Width = 125;
+			// 
+			// guestsBindingSource
+			// 
+			this.guestsBindingSource.DataMember = "Guests";
+			this.guestsBindingSource.DataSource = this.hotelManagementDataSet;
+			// 
+			// hotelManagementDataSet
+			// 
+			this.hotelManagementDataSet.DataSetName = "HotelManagementDataSet";
+			this.hotelManagementDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+			// 
 			// TCField
 			// 
 			this.TCField.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -261,67 +320,9 @@
 			this.lblTitle.TabIndex = 52;
 			this.lblTitle.Text = "Danh sách thông tin khách";
 			// 
-			// hotelManagementDataSet
-			// 
-			this.hotelManagementDataSet.DataSetName = "HotelManagementDataSet";
-			this.hotelManagementDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-			// 
-			// guestsBindingSource
-			// 
-			this.guestsBindingSource.DataMember = "Guests";
-			this.guestsBindingSource.DataSource = this.hotelManagementDataSet;
-			// 
 			// guestsTableAdapter
 			// 
 			this.guestsTableAdapter.ClearBeforeFill = true;
-			// 
-			// guestIDDataGridViewTextBoxColumn
-			// 
-			this.guestIDDataGridViewTextBoxColumn.DataPropertyName = "GuestID";
-			this.guestIDDataGridViewTextBoxColumn.HeaderText = "GuestID";
-			this.guestIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-			this.guestIDDataGridViewTextBoxColumn.Name = "guestIDDataGridViewTextBoxColumn";
-			this.guestIDDataGridViewTextBoxColumn.Width = 125;
-			// 
-			// firstNameDataGridViewTextBoxColumn
-			// 
-			this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
-			this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
-			this.firstNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-			this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-			this.firstNameDataGridViewTextBoxColumn.Width = 125;
-			// 
-			// lastNameDataGridViewTextBoxColumn
-			// 
-			this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
-			this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
-			this.lastNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-			this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-			this.lastNameDataGridViewTextBoxColumn.Width = 125;
-			// 
-			// emailDataGridViewTextBoxColumn
-			// 
-			this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-			this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-			this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
-			this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-			this.emailDataGridViewTextBoxColumn.Width = 125;
-			// 
-			// phoneNumberDataGridViewTextBoxColumn
-			// 
-			this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber";
-			this.phoneNumberDataGridViewTextBoxColumn.HeaderText = "PhoneNumber";
-			this.phoneNumberDataGridViewTextBoxColumn.MinimumWidth = 6;
-			this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
-			this.phoneNumberDataGridViewTextBoxColumn.Width = 125;
-			// 
-			// addressDataGridViewTextBoxColumn
-			// 
-			this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
-			this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
-			this.addressDataGridViewTextBoxColumn.MinimumWidth = 6;
-			this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-			this.addressDataGridViewTextBoxColumn.Width = 125;
 			// 
 			// DTField
 			// 
@@ -331,7 +332,7 @@
 			this.DTField.Size = new System.Drawing.Size(328, 34);
 			this.DTField.TabIndex = 69;
 			// 
-			// FormGuest
+			// FormGuests
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -355,15 +356,15 @@
 			this.Controls.Add(this.lblHoTen);
 			this.Controls.Add(this.lblMSV);
 			this.Controls.Add(this.lblTitle);
-			this.Name = "FormGuest";
+			this.Name = "FormGuests";
 			this.Text = "FormGuest";
 			this.Load += new System.EventHandler(this.FormGuest_Load);
 			((System.ComponentModel.ISupportInitialize)(this.doDongHaiAPMidtermsDataSetBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.lOPBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pHIEUNHAPBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSet)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.guestsBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSet)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

@@ -265,49 +265,49 @@ INSERT INTO Guests (GuestID, FirstName, LastName, Email, PhoneNumber, Address) V
 ('G020', N'Trương', N'Văn Khôi', 'tvkhoi@gmail.com', '0929012345', N'Hải Phòng');
 
 INSERT INTO Reservations (ReserID, GuestID, RoomID, CheckInDate, CheckOutDate) VALUES
-('RES001', 'G001', 'R001', '2025-01-01 14:00:00', '2025-01-05 12:00:00'),
-('RES002', 'G002', 'R002', '2025-01-02 15:00:00', '2025-01-06 11:00:00'),
-('RES003', 'G003', 'R003', '2025-01-03 16:00:00', '2025-01-07 10:00:00'),
-('RES004', 'G004', 'R004', '2025-01-04 14:00:00', '2025-01-08 12:00:00'),
-('RES005', 'G005', 'R005', '2025-01-05 15:00:00', '2025-01-09 11:00:00'),
-('RES006', 'G006', 'R006', '2025-02-01 14:00:00', '2025-02-05 12:00:00'),
-('RES007', 'G007', 'R007', '2025-02-02 15:00:00', '2025-02-06 11:00:00'),
-('RES008', 'G008', 'R008', '2025-02-03 16:00:00', '2025-02-07 10:00:00'),
-('RES009', 'G009', 'R009', '2025-02-04 14:00:00', '2025-02-08 12:00:00'),
-('RES010', 'G010', 'R010', '2025-02-05 15:00:00', '2025-02-09 11:00:00'),
-('RES011', 'G011', 'R011', '2025-03-01 14:00:00', '2025-03-05 12:00:00'),
-('RES012', 'G012', 'R012', '2025-03-02 15:00:00', '2025-03-06 11:00:00'),
-('RES013', 'G013', 'R013', '2025-03-03 16:00:00', '2025-03-07 10:00:00'),
-('RES014', 'G014', 'R014', '2025-03-04 14:00:00', '2025-03-08 12:00:00'),
-('RES015', 'G015', 'R015', '2025-03-05 15:00:00', '2025-03-09 11:00:00'),
-('RES016', 'G016', 'R016', '2025-04-01 14:00:00', '2025-04-05 12:00:00'),
-('RES017', 'G017', 'R017', '2025-04-02 15:00:00', '2025-04-06 11:00:00'),
-('RES018', 'G018', 'R018', '2025-04-03 16:00:00', '2025-04-07 10:00:00'),
-('RES019', 'G019', 'R019', '2025-04-04 14:00:00', '2025-04-08 12:00:00'),
-('RES020', 'G020', 'R020', '2025-04-05 15:00:00', '2025-04-09 11:00:00');
+('RES001', 'G001', 'R001', '2026-01-01 14:00:00', '2026-01-05 12:00:00'),
+('RES002', 'G002', 'R002', '2026-01-02 15:00:00', '2026-01-06 11:00:00'),
+('RES003', 'G003', 'R003', '2026-01-03 16:00:00', '2026-01-07 10:00:00'),
+('RES004', 'G004', 'R004', '2026-01-04 14:00:00', '2026-01-08 12:00:00'),
+('RES005', 'G005', 'R005', '2026-01-05 15:00:00', '2026-01-09 11:00:00'),
+('RES006', 'G006', 'R006', '2026-02-01 14:00:00', '2026-02-05 12:00:00'),
+('RES007', 'G007', 'R007', '2026-02-02 15:00:00', '2026-02-06 11:00:00'),
+('RES008', 'G008', 'R008', '2026-02-03 16:00:00', '2026-02-07 10:00:00'),
+('RES009', 'G009', 'R009', '2026-02-04 14:00:00', '2026-02-08 12:00:00'),
+('RES010', 'G010', 'R010', '2026-02-05 15:00:00', '2026-02-09 11:00:00'),
+('RES011', 'G011', 'R011', '2026-03-01 14:00:00', '2026-03-05 12:00:00'),
+('RES012', 'G012', 'R012', '2026-03-02 15:00:00', '2026-03-06 11:00:00'),
+('RES013', 'G013', 'R013', '2026-03-03 16:00:00', '2026-03-07 10:00:00'),
+('RES014', 'G014', 'R014', '2026-03-04 14:00:00', '2026-03-08 12:00:00'),
+('RES015', 'G015', 'R015', '2026-03-05 15:00:00', '2026-03-09 11:00:00'),
+('RES016', 'G016', 'R016', '2026-04-01 14:00:00', '2026-04-05 12:00:00'),
+('RES017', 'G017', 'R017', '2026-04-02 15:00:00', '2026-04-06 11:00:00'),
+('RES018', 'G018', 'R018', '2026-04-03 16:00:00', '2026-04-07 10:00:00'),
+('RES019', 'G019', 'R019', '2026-04-04 14:00:00', '2026-04-08 12:00:00'),
+('RES020', 'G020', 'R020', '2026-04-05 15:00:00', '2026-04-09 11:00:00');
 
 
 INSERT INTO ServiceOrders (GuestID, ServiceID, EmployeeID, OrderDate) VALUES
-('G001', 'S001', 'E004', '2025-01-02 18:00:00'),
-('G002', 'S002', 'E005', '2025-01-03 09:00:00'),
-('G003', 'S003', 'E005', '2025-01-04 14:00:00'),
-('G004', 'S004', 'E004', '2025-01-05 07:00:00'),
-('G005', 'S005', 'E010', '2025-01-06 10:00:00'),
-('G006', 'S001', 'E004', '2025-02-02 18:00:00'),
-('G007', 'S002', 'E015', '2025-02-03 09:00:00'),
-('G008', 'S003', 'E005', '2025-02-04 14:00:00'),
-('G009', 'S004', 'E004', '2025-02-05 07:00:00'),
-('G010', 'S005', 'E020', '2025-02-06 10:00:00'),
-('G011', 'S001', 'E004', '2025-03-02 18:00:00'),
-('G012', 'S002', 'E005', '2025-03-03 09:00:00'),
-('G013', 'S003', 'E005', '2025-03-04 14:00:00'),
-('G014', 'S004', 'E004', '2025-03-05 07:00:00'),
-('G015', 'S005', 'E010', '2025-03-06 10:00:00'),
-('G016', 'S001', 'E004', '2025-04-02 18:00:00'),
-('G017', 'S002', 'E015', '2025-04-03 09:00:00'),
-('G018', 'S003', 'E005', '2025-04-04 14:00:00'),
-('G019', 'S004', 'E004', '2025-04-05 07:00:00'),
-('G020', 'S005', 'E020', '2025-04-06 10:00:00');
+('G001', 'S001', 'E004', '2026-01-02 18:00:00'),
+('G002', 'S002', 'E005', '2026-01-03 09:00:00'),
+('G003', 'S003', 'E005', '2026-01-04 14:00:00'),
+('G004', 'S004', 'E004', '2026-01-05 07:00:00'),
+('G005', 'S005', 'E010', '2026-01-06 10:00:00'),
+('G006', 'S001', 'E004', '2026-02-02 18:00:00'),
+('G007', 'S002', 'E015', '2026-02-03 09:00:00'),
+('G008', 'S003', 'E005', '2026-02-04 14:00:00'),
+('G009', 'S004', 'E004', '2026-02-05 07:00:00'),
+('G010', 'S005', 'E020', '2026-02-06 10:00:00'),
+('G011', 'S001', 'E004', '2026-03-02 18:00:00'),
+('G012', 'S002', 'E005', '2026-03-03 09:00:00'),
+('G013', 'S003', 'E005', '2026-03-04 14:00:00'),
+('G014', 'S004', 'E004', '2026-03-05 07:00:00'),
+('G015', 'S005', 'E010', '2026-03-06 10:00:00'),
+('G016', 'S001', 'E004', '2026-04-02 18:00:00'),
+('G017', 'S002', 'E015', '2026-04-03 09:00:00'),
+('G018', 'S003', 'E005', '2026-04-04 14:00:00'),
+('G019', 'S004', 'E004', '2026-04-05 07:00:00'),
+('G020', 'S005', 'E020', '2026-04-06 10:00:00');
 
 INSERT INTO Inventory (ItemID, ItemName, InStock, Unit, PricePerUnit) VALUES
 ('I001', 'Toilet Paper', 100, 'rolls', 5000),
@@ -327,11 +327,10 @@ Go
 
 INSERT INTO Accounts (Username, Pass, LinkedID) VALUES
 ('e', 'p', 'E017'),
-('g', 'p', 'G008');
+('g', 'p', 'E008');
 
 --Tạo danh sách những phòng trống trong một khoảng thời gian nhất định. (Mục đích: hỗ trợ bộ phận lễ tân giải quyết việc đặt phòng)
 --RoomTypeName is an optional argument, if it's not provided, then every room that isn't occupied will be shown.
--- TODO: Put this in VS
 create proc CheckAvailableRooms @CheckInDate DATETIME, @Duration Float, @RoomTypeName VarChar(50) = '*'
 As
 Begin
@@ -359,13 +358,13 @@ Begin
 End
 Go
 
-Exec CheckAvailableRooms '2025-02-02 06:00:00', 8.5, 'Deluxe'
+Exec CheckAvailableRooms '2026-02-02 06:00:00', 8.5, 'Deluxe'
 
 --These rooms are occupied during the timeframe above (I used this to debug the CheckAvailableRooms proc)
 Select * From Rooms, Reservations
 	Where Rooms.RoomID = Reservations.RoomID 
-	  And CheckOutDate > '2025-02-02 06:00:00'
-	  And CheckInDate < '2025-02-10 18:00:00'
+	  And CheckOutDate > '2026-02-02 06:00:00'
+	  And CheckInDate < '2026-02-10 18:00:00'
 	  And PaymentStatus != 'Cancelled'
 
 create proc CalcPayment @reserID Char(10)
@@ -478,7 +477,7 @@ BEGIN
 		INSERT INTO Reservations VALUES(@ReserID,@GuestID,@RoomID,@CheckInDate,@CheckOutDate,@PaymentStatus)
 END
 
-EXEC SP_THEMRESER @ReserID='RES100',@GuestID='G002',@RoomID='R001',@CheckInDate='2025-04-12',@CheckOutDate='2025-04-13'
+EXEC SP_THEMRESER @ReserID='RES100',@GuestID='G002',@RoomID='R001',@CheckInDate='2026-04-12',@CheckOutDate='2026-04-13'
 
 --thu tuc them InventoryChanges
 CREATE PROCEDURE SP_THEMINVENCHANGE
@@ -501,8 +500,8 @@ BEGIN
 END
 
 SELECT * FROM InventoryChanges
-EXEC SP_THEMINVENCHANGE @ChangeDate='2025-04-12',@ChangeType='ADDITION',@EmployeeID='E004',@ItemID='I001',@Quantity='50',@Notes='NHAP THEM GIAY VE SINH'
-EXEC SP_THEMINVENCHANGE @ChangeDate='2025-04-13',@ChangeType='Removal',@EmployeeID='E004',@ItemID='I002',@Quantity='50'
+EXEC SP_THEMINVENCHANGE @ChangeDate='2026-04-12',@ChangeType='ADDITION',@EmployeeID='E004',@ItemID='I001',@Quantity='50',@Notes='NHAP THEM GIAY VE SINH'
+EXEC SP_THEMINVENCHANGE @ChangeDate='2026-04-13',@ChangeType='Removal',@EmployeeID='E004',@ItemID='I002',@Quantity='50'
 Go
 
 -- Mỗi dịch vụ có doanh thu là bao nhiêu?
@@ -520,7 +519,7 @@ Select * From ServiceRevenue Order By TotalRevenue Desc
 Go
 
 -- Chi tiết hóa đơn đặt phòng
-CREATE VIEW ReservationInvoiceDetails AS
+CREATE or alter VIEW ReservationInvoiceDetails AS
 SELECT 
     ReserID, 
     Guests.GuestID, 
@@ -531,7 +530,8 @@ SELECT
     DATEDIFF(DAY, CheckInDate, CheckOutDate) AS StayDuration,
     (DATEDIFF(DAY, CheckInDate, CheckOutDate) * RoomTypes.Price) AS RoomCost,
     ISNULL(SUM(Services.Price), 0) AS ServiceCost,
-    (DATEDIFF(DAY, CheckInDate, CheckOutDate) * RoomTypes.Price + ISNULL(SUM(Services.Price), 0)) AS TotalCost
+    (DATEDIFF(DAY, CheckInDate, CheckOutDate) * RoomTypes.Price + ISNULL(SUM(Services.Price), 0)) AS TotalCost,
+	Reservations.PaymentStatus
 FROM 
     Reservations, Guests, Rooms, RoomTypes, ServiceOrders, Services
 WHERE 
@@ -543,33 +543,38 @@ WHERE
     AND ServiceOrders.ServiceID = Services.ServiceID
 GROUP BY 
     ReserID, Guests.GuestID, FirstName, LastName, Reservations.RoomID, 
-    RoomTypeName, RoomTypes.Price, CheckInDate, CheckOutDate;
+    RoomTypeName, RoomTypes.Price, CheckInDate, CheckOutDate, PaymentStatus;
 Go
 Select * from ReservationInvoiceDetails
 
 --Tổng số dịch vụ đã được nhân viên xử lý trong tháng qua? (Mục đích: đánh giá hiệu quả công việc của từng nhân viên)
-SELECT EmployeeID, COUNT(ServiceOrderID) AS ServicesHandled
-FROM ServiceOrders
-WHERE OrderDate >= DATEADD(MONTH, -1, GETDATE())
-GROUP BY EmployeeID;
+CREATE VIEW EmployeeService AS
+	SELECT EmployeeID, COUNT(ServiceOrderID) AS ServicesHandled
+	FROM ServiceOrders
+	WHERE OrderDate >= DATEADD(MONTH, -1, GETDATE())
+	GROUP BY EmployeeID;
+GO
 
 --Tháng qua một khách trung bình ở khách sạn bao lâu? (Mục đích: phân tích hành vi khách để tối ưu giá phòng)
-SELECT AVG(DATEDIFF(DAY, CheckInDate, CheckOutDate)) AS AverageStayLength
-FROM Reservations
-WHERE CheckInDate >= DATEADD(MONTH, -1, GETDATE());
+Create view AverageGuestStayLength As
+	SELECT AVG(DATEDIFF(DAY, CheckInDate, CheckOutDate)) AS AverageStayLength
+	FROM Reservations
+	WHERE CheckInDate >= DATEADD(MONTH, -1, GETDATE());
+Go
 
 --Năm qua có khách nào ở khách sạn hơn 30 ngày không? (Mục đích: xác định khách hàng thân thiết để đề xuất chương trình ưu đãi)
-SELECT 
-    Guests.GuestID, 
-    CONCAT(FirstName, ' ', LastName) AS GuestName, 
-    PhoneNumber, Email, 
-    SUM(DATEDIFF(DAY, CheckInDate, CheckOutDate)) AS TotalDaysStayed
-FROM 
-    Reservations, Guests
-WHERE 
-    Reservations.GuestID = Guests.GuestID 
-    AND CheckInDate >= DATEADD(YEAR, -1, GETDATE())
-GROUP BY 
-    Guests.GuestID, FirstName, LastName, PhoneNumber, Email
-HAVING 
-    SUM(DATEDIFF(DAY, CheckInDate, CheckOutDate)) > 30;
+Create View LoyalGuests As
+	SELECT 
+		Guests.GuestID, 
+		CONCAT(FirstName, ' ', LastName) AS GuestName, 
+		PhoneNumber, Email, 
+		SUM(DATEDIFF(DAY, CheckInDate, CheckOutDate)) AS TotalDaysStayed
+	FROM 
+		Reservations, Guests
+	WHERE 
+		Reservations.GuestID = Guests.GuestID 
+		AND CheckInDate >= DATEADD(YEAR, -1, GETDATE())
+	GROUP BY 
+		Guests.GuestID, FirstName, LastName, PhoneNumber, Email
+	HAVING 
+		SUM(DATEDIFF(DAY, CheckInDate, CheckOutDate)) > 30;

@@ -3,7 +3,7 @@
 	static class LoginInfo
 	{
 		private static string id = "";
-		private static string role = "Guest";
+		private static string role = "";
 
 		public static string ID
 		{

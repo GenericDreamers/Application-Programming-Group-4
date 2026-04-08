@@ -41,6 +41,15 @@
 			this.btnLuu = new System.Windows.Forms.Button();
 			this.btnTao = new System.Windows.Forms.Button();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.EmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.PositionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.DateOfBirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.employeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.btnThoat = new System.Windows.Forms.Button();
 			this.label3 = new System.Windows.Forms.Label();
 			this.TCField = new System.Windows.Forms.TextBox();
@@ -53,16 +62,7 @@
 			this.doDongHaiAPMidtermsDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.lOPBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.pHIEUNHAPBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.employeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.employeesTableAdapter = new Group4Ap.HotelManagementDataSetTableAdapters.EmployeesTableAdapter();
-			this.EmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.PositionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.DateOfBirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.MCVField = new System.Windows.Forms.ComboBox();
@@ -73,10 +73,10 @@
 			((System.ComponentModel.ISupportInitialize)(this.guestsBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSet)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.doDongHaiAPMidtermsDataSetBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.lOPBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pHIEUNHAPBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).BeginInit();
 			this.g1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -197,6 +197,75 @@
 			this.dataGridView1.Size = new System.Drawing.Size(1278, 307);
 			this.dataGridView1.TabIndex = 77;
 			// 
+			// EmployeeID
+			// 
+			this.EmployeeID.DataPropertyName = "EmployeeID";
+			this.EmployeeID.HeaderText = "EmployeeID";
+			this.EmployeeID.MinimumWidth = 6;
+			this.EmployeeID.Name = "EmployeeID";
+			this.EmployeeID.Width = 125;
+			// 
+			// PositionID
+			// 
+			this.PositionID.DataPropertyName = "PositionID";
+			this.PositionID.HeaderText = "PositionID";
+			this.PositionID.MinimumWidth = 6;
+			this.PositionID.Name = "PositionID";
+			this.PositionID.Width = 125;
+			// 
+			// firstNameDataGridViewTextBoxColumn
+			// 
+			this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+			this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
+			this.firstNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+			this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+			this.firstNameDataGridViewTextBoxColumn.Width = 125;
+			// 
+			// lastNameDataGridViewTextBoxColumn
+			// 
+			this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+			this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
+			this.lastNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+			this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+			this.lastNameDataGridViewTextBoxColumn.Width = 125;
+			// 
+			// Sex
+			// 
+			this.Sex.DataPropertyName = "Sex";
+			this.Sex.HeaderText = "Sex";
+			this.Sex.MinimumWidth = 6;
+			this.Sex.Name = "Sex";
+			this.Sex.Width = 125;
+			// 
+			// DateOfBirth
+			// 
+			this.DateOfBirth.DataPropertyName = "DateOfBirth";
+			this.DateOfBirth.HeaderText = "DateOfBirth";
+			this.DateOfBirth.MinimumWidth = 6;
+			this.DateOfBirth.Name = "DateOfBirth";
+			this.DateOfBirth.Width = 125;
+			// 
+			// phoneNumberDataGridViewTextBoxColumn
+			// 
+			this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber";
+			this.phoneNumberDataGridViewTextBoxColumn.HeaderText = "PhoneNumber";
+			this.phoneNumberDataGridViewTextBoxColumn.MinimumWidth = 6;
+			this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
+			this.phoneNumberDataGridViewTextBoxColumn.Width = 125;
+			// 
+			// emailDataGridViewTextBoxColumn
+			// 
+			this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+			this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+			this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
+			this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+			this.emailDataGridViewTextBoxColumn.Width = 125;
+			// 
+			// employeesBindingSource
+			// 
+			this.employeesBindingSource.DataMember = "Employees";
+			this.employeesBindingSource.DataSource = this.hotelManagementDataSet;
+			// 
 			// btnThoat
 			// 
 			this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -296,78 +365,9 @@
 			// 
 			this.pHIEUNHAPBindingSource.DataMember = "PHIEUNHAP";
 			// 
-			// employeesBindingSource
-			// 
-			this.employeesBindingSource.DataMember = "Employees";
-			this.employeesBindingSource.DataSource = this.hotelManagementDataSet;
-			// 
 			// employeesTableAdapter
 			// 
 			this.employeesTableAdapter.ClearBeforeFill = true;
-			// 
-			// EmployeeID
-			// 
-			this.EmployeeID.DataPropertyName = "EmployeeID";
-			this.EmployeeID.HeaderText = "EmployeeID";
-			this.EmployeeID.MinimumWidth = 6;
-			this.EmployeeID.Name = "EmployeeID";
-			this.EmployeeID.Width = 125;
-			// 
-			// PositionID
-			// 
-			this.PositionID.DataPropertyName = "PositionID";
-			this.PositionID.HeaderText = "PositionID";
-			this.PositionID.MinimumWidth = 6;
-			this.PositionID.Name = "PositionID";
-			this.PositionID.Width = 125;
-			// 
-			// firstNameDataGridViewTextBoxColumn
-			// 
-			this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
-			this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
-			this.firstNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-			this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-			this.firstNameDataGridViewTextBoxColumn.Width = 125;
-			// 
-			// lastNameDataGridViewTextBoxColumn
-			// 
-			this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
-			this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
-			this.lastNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-			this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-			this.lastNameDataGridViewTextBoxColumn.Width = 125;
-			// 
-			// Sex
-			// 
-			this.Sex.DataPropertyName = "Sex";
-			this.Sex.HeaderText = "Sex";
-			this.Sex.MinimumWidth = 6;
-			this.Sex.Name = "Sex";
-			this.Sex.Width = 125;
-			// 
-			// DateOfBirth
-			// 
-			this.DateOfBirth.DataPropertyName = "DateOfBirth";
-			this.DateOfBirth.HeaderText = "DateOfBirth";
-			this.DateOfBirth.MinimumWidth = 6;
-			this.DateOfBirth.Name = "DateOfBirth";
-			this.DateOfBirth.Width = 125;
-			// 
-			// phoneNumberDataGridViewTextBoxColumn
-			// 
-			this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber";
-			this.phoneNumberDataGridViewTextBoxColumn.HeaderText = "PhoneNumber";
-			this.phoneNumberDataGridViewTextBoxColumn.MinimumWidth = 6;
-			this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
-			this.phoneNumberDataGridViewTextBoxColumn.Width = 125;
-			// 
-			// emailDataGridViewTextBoxColumn
-			// 
-			this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-			this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-			this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
-			this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-			this.emailDataGridViewTextBoxColumn.Width = 125;
 			// 
 			// label4
 			// 
@@ -414,22 +414,22 @@
 			// 
 			this.rBtnMale.AutoSize = true;
 			this.rBtnMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-			this.rBtnMale.Location = new System.Drawing.Point(7, 20);
+			this.rBtnMale.Location = new System.Drawing.Point(7, 18);
 			this.rBtnMale.Name = "rBtnMale";
-			this.rBtnMale.Size = new System.Drawing.Size(76, 29);
+			this.rBtnMale.Size = new System.Drawing.Size(74, 29);
 			this.rBtnMale.TabIndex = 0;
-			this.rBtnMale.Text = "Male";
+			this.rBtnMale.Text = "Nam";
 			this.rBtnMale.UseVisualStyleBackColor = true;
 			// 
 			// rBtnFemale
 			// 
 			this.rBtnFemale.AutoSize = true;
 			this.rBtnFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-			this.rBtnFemale.Location = new System.Drawing.Point(194, 19);
+			this.rBtnFemale.Location = new System.Drawing.Point(238, 18);
 			this.rBtnFemale.Name = "rBtnFemale";
-			this.rBtnFemale.Size = new System.Drawing.Size(98, 29);
+			this.rBtnFemale.Size = new System.Drawing.Size(58, 29);
 			this.rBtnFemale.TabIndex = 1;
-			this.rBtnFemale.Text = "Female";
+			this.rBtnFemale.Text = "Nữ";
 			this.rBtnFemale.UseVisualStyleBackColor = true;
 			// 
 			// NSField
@@ -476,10 +476,10 @@
 			((System.ComponentModel.ISupportInitialize)(this.guestsBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSet)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.doDongHaiAPMidtermsDataSetBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.lOPBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pHIEUNHAPBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).EndInit();
 			this.g1.ResumeLayout(false);
 			this.g1.PerformLayout();
 			this.ResumeLayout(false);

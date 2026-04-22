@@ -1,0 +1,208 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ntung\\Downloads\\Group4Ap\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|c:\\users\\ntung\\downloads\\group4ap\\formrooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|solutionrelative:formrooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|C:\\Users\\ntung\\Downloads\\Group4Ap\\formrooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|solutionrelative:formrooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|c:\\users\\ntung\\downloads\\group4ap\\formemployees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|solutionrelative:formemployees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|C:\\Users\\ntung\\Downloads\\Group4Ap\\formserviceorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|solutionrelative:formserviceorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|C:\\Users\\ntung\\Downloads\\Group4Ap\\formservicerevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|solutionrelative:formservicerevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|C:\\Users\\ntung\\Downloads\\Group4Ap\\formservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|solutionrelative:formservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|C:\\Users\\ntung\\Downloads\\Group4Ap\\formguests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|solutionrelative:formguests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|C:\\Users\\ntung\\Downloads\\Group4Ap\\formavailablerooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|solutionrelative:formavailablerooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|C:\\Users\\ntung\\Downloads\\Group4Ap\\forminventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|solutionrelative:forminventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|C:\\Users\\ntung\\Downloads\\Group4Ap\\formmiscsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|solutionrelative:formmiscsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|C:\\Users\\ntung\\Downloads\\Group4Ap\\formpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|solutionrelative:formpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|C:\\Users\\ntung\\Downloads\\Group4Ap\\formreservations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|solutionrelative:formreservations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormRooms.cs",
+              "DocumentMoniker": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormRooms.cs",
+              "RelativeDocumentMoniker": "FormRooms.cs",
+              "ToolTip": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormRooms.cs",
+              "RelativeToolTip": "FormRooms.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAnwCwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T09:19:31.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormReservations.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormReservations.cs",
+              "RelativeDocumentMoniker": "FormReservations.cs",
+              "ToolTip": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormReservations.cs [Design]",
+              "RelativeToolTip": "FormReservations.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T16:56:57.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormPayment.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormPayment.cs",
+              "RelativeDocumentMoniker": "FormPayment.cs",
+              "ToolTip": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormPayment.cs [Design]",
+              "RelativeToolTip": "FormPayment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T16:56:56.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormMiscSearch.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormMiscSearch.cs",
+              "RelativeDocumentMoniker": "FormMiscSearch.cs",
+              "ToolTip": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormMiscSearch.cs [Design]",
+              "RelativeToolTip": "FormMiscSearch.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T16:56:54.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormInventory.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormInventory.cs",
+              "RelativeDocumentMoniker": "FormInventory.cs",
+              "ToolTip": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormInventory.cs [Design]",
+              "RelativeToolTip": "FormInventory.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T16:56:46.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormAvailableRooms.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormAvailableRooms.cs",
+              "RelativeDocumentMoniker": "FormAvailableRooms.cs",
+              "ToolTip": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormAvailableRooms.cs [Design]",
+              "RelativeToolTip": "FormAvailableRooms.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T05:29:17.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormGuests.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormGuests.cs",
+              "RelativeDocumentMoniker": "FormGuests.cs",
+              "ToolTip": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormGuests.cs [Design]",
+              "RelativeToolTip": "FormGuests.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T16:56:39.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormServices.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormServices.cs",
+              "RelativeDocumentMoniker": "FormServices.cs",
+              "ToolTip": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormServices.cs [Design]",
+              "RelativeToolTip": "FormServices.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T16:57:01.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormServiceRevenue.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormServiceRevenue.cs",
+              "RelativeDocumentMoniker": "FormServiceRevenue.cs",
+              "ToolTip": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormServiceRevenue.cs [Design]",
+              "RelativeToolTip": "FormServiceRevenue.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T16:57:00.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormServiceOrders.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormServiceOrders.cs",
+              "RelativeDocumentMoniker": "FormServiceOrders.cs",
+              "ToolTip": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormServiceOrders.cs [Design]",
+              "RelativeToolTip": "FormServiceOrders.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T16:56:59.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormRooms.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormRooms.cs",
+              "RelativeDocumentMoniker": "FormRooms.cs",
+              "ToolTip": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormRooms.cs [Design]",
+              "RelativeToolTip": "FormRooms.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T16:56:58.451Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormEmployees.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormEmployees.cs",
+              "RelativeDocumentMoniker": "FormEmployees.cs",
+              "ToolTip": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormEmployees.cs [Design]",
+              "RelativeToolTip": "FormEmployees.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T16:52:44.982Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\bin\Debug\Group4Ap.exe.config
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\bin\Debug\Group4Ap.exe
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\bin\Debug\Group4Ap.pdb
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.csproj.AssemblyReference.cache
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormMiscSearch.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.Properties.Resources.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.csproj.GenerateResource.cache
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.csproj.CoreCompileInputs.cache
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.exe
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.pdb
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormEmployees.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormGuests.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormRooms.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormServices.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormInventory.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormLogin.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormServiceOrders.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormReservations.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormMain.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormAvailableRooms.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormPayment.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormServiceRevenue.resources
+C:\Users\ntung\Downloads\Group4Ap\bin\Debug\Group4Ap.exe.config
+C:\Users\ntung\Downloads\Group4Ap\bin\Debug\Group4Ap.exe
+C:\Users\ntung\Downloads\Group4Ap\bin\Debug\Group4Ap.pdb
+C:\Users\ntung\Downloads\Group4Ap\bin\Debug\Guna.UI2.dll
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.csproj.AssemblyReference.cache
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.FormAvailableRooms.resources
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.FormEmployees.resources
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.FormGuests.resources
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.FormInventory.resources
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.FormLogin.resources
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.FormMiscSearch.resources
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.FormPayment.resources
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.FormReservations.resources
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.FormRooms.resources
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.FormServiceOrders.resources
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.FormServiceRevenue.resources
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.FormServices.resources
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.FormMain.resources
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.Properties.Resources.resources
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.csproj.GenerateResource.cache
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.csproj.CoreCompileInputs.cache
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.csproj.Up2Date
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.exe
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.pdb
+C:\Users\ntung\Downloads\Group4Ap\obj\Debug\Group4Ap.Main.resources
+C:\Users\ntung\Downloads\Group4Ap\bin\Debug\FontAwesome.Sharp.dll

@@ -43,7 +43,7 @@ namespace Group4Ap
 			}
 
 			dataGridView1.DataSource = db.GetTable(String.Format("Exec CheckAvailableRooms '{0}', {1}, '{2}'"
-			, CIField.Text, DField.Text, RTN));
+            , CIField.Text, DField.Text, RTN));
 		}
 
 		private void btnXoa_Click(object sender, EventArgs e)

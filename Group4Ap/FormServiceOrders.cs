@@ -21,17 +21,16 @@ namespace Group4Ap
 		databaseConnection db = new databaseConnection();
 		private void btnTao_Click(object sender, EventArgs e)
 		{
-			int nRowIndex = dataGridView1.Rows.Count - 1;
-			SOIField.Text = (nRowIndex+1).ToString();
+            int nRowIndex = dataGridView1.Rows.Count - 1;
+            dataGridView1.FirstDisplayedScrollingRowIndex = nRowIndex;
+            dataGridView1.CurrentCell = dataGridView1.Rows[nRowIndex].Cells[0];
+
+            SOIField.Text = (nRowIndex+1).ToString();
 			GIDField.Text = "";
 			SIDField.Text = "";
 			EIDField.Text = "";
 			ODField.Text = "";
 			SOIField.Focus();
-			dataGridView1.ClearSelection();
-
-			dataGridView1.Rows[nRowIndex].Selected = true;
-			dataGridView1.FirstDisplayedScrollingRowIndex = nRowIndex;
 		}
 
 		private void btnLuu_Click(object sender, EventArgs e)
@@ -82,5 +81,13 @@ namespace Group4Ap
 		{
 			this.serviceOrdersTableAdapter.Fill(this.hotelManagementDataSet.ServiceOrders);
 		}
-	}
+
+        private void dataGridView1_CurrentCellChanged(object sender, EventArgs e)
+        {
+            if (dataGridView1.CurrentRow == null) { return; }
+
+            if (dataGridView1.CurrentRow.IsNewRow) { btnLuu.Enabled = true; btnSua.Enabled = false; }
+            else { btnLuu.Enabled = false; btnSua.Enabled = true; }
+        }
+    }
 }

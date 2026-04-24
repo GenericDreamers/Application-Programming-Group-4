@@ -20,3 +20,4 @@ D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\G
 D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormAvailableRooms.resources
 D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormPayment.resources
 D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.FormServiceRevenue.resources
+D:\Downloads\Uni Stuff\Application Programming\Vis\Group4Ap\Group4Ap\obj\Debug\Group4Ap.exe.config

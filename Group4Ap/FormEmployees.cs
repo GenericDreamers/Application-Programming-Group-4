@@ -20,8 +20,7 @@ namespace Group4Ap
 		databaseConnection db = new databaseConnection();
 		private void FormEmployees_Load(object sender, EventArgs e)
 		{
-            // TODO: This line of code loads data into the 'hotelManagementDataSet.Employees' table. You can move, or remove it, as needed.
-			showData();
+            showData();
 			MNVField.DataBindings.Add("Text", dataGridView1.DataSource, "EmployeeID");
 			TDField.DataBindings.Add("Text", dataGridView1.DataSource, "FirstName");
 			TCField.DataBindings.Add("Text", dataGridView1.DataSource, "LastName");
@@ -40,7 +39,11 @@ namespace Group4Ap
 		}
 		private void btnTao_Click(object sender, EventArgs e)
 		{
-			MNVField.Text = "";
+            int nRowIndex = dataGridView1.Rows.Count - 1;
+            dataGridView1.FirstDisplayedScrollingRowIndex = nRowIndex;
+            dataGridView1.CurrentCell = dataGridView1.Rows[nRowIndex].Cells[0];
+
+            MNVField.Text = "";
 			TDField.Text = "";
 			TCField.Text = "";
 			EmailField.Text = "";
@@ -48,12 +51,8 @@ namespace Group4Ap
 			NSField.Text = "";
 			MCVField.Text = "";
 			MNVField.Focus();
-			dataGridView1.ClearSelection();
 
-			int nRowIndex = dataGridView1.Rows.Count - 1;
-			dataGridView1.Rows[nRowIndex].Selected = true;
-			dataGridView1.FirstDisplayedScrollingRowIndex = nRowIndex;
-		}
+        }
 
 		private void btnLuu_Click(object sender, EventArgs e)
 		{
@@ -91,6 +90,10 @@ namespace Group4Ap
 		private void DataGridView1_CurrentCellChanged(object sender, EventArgs e)
 		{
 			genderRadioSync();
+			if (dataGridView1.CurrentRow == null) { return; }
+
+            if (dataGridView1.CurrentRow.IsNewRow) { btnLuu.Enabled = true; btnSua.Enabled = false; }
+			else {  btnLuu.Enabled = false; btnSua.Enabled = true; }
 		}
 		private void genderRadioSync()
 		{

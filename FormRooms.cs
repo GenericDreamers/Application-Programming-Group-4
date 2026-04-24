@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -101,5 +102,29 @@ namespace Group4Ap
 				rBtnNo.Checked = maintenance.Equals("N", StringComparison.OrdinalIgnoreCase);
 			}
 		}
-	}
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                databaseConnection db = new databaseConnection();
+                db.openConnection();
+
+                string sql = "SELECT * FROM RoomOccupancyRate";
+                SqlDataAdapter da = new SqlDataAdapter(sql, db.cnn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dt.TableName = "RoomOccupancyRate";
+
+                FormReport_RoomOccupancyViewer f = new FormReport_RoomOccupancyViewer();
+                f.SetDataSource(dt);
+                f.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+    }
 }

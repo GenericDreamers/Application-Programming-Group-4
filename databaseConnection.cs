@@ -17,7 +17,7 @@ namespace DoDongHai
 
 		public void openConnection()
 		{
-			string sql = @"Data Source=TUNDUN; Initial Catalog=HotelManagement;Integrated Security=True";
+			string sql = @"Data Source=A;Initial Catalog=HotelManagement;Integrated Security=True";
 			cnn = new SqlConnection(sql);
 			cnn.Open();
 		}

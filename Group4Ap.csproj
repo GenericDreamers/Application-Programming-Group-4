@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
@@ -48,6 +52,7 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -104,6 +109,66 @@
     <Compile Include="FormPayment.Designer.cs">
       <DependentUpon>FormPayment.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormReport_PaymentBillDesign.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormReport_PaymentBillDesign.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormReport_PaymentBillViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReport_PaymentBillViewer.Designer.cs">
+      <DependentUpon>FormReport_PaymentBillViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReport_RevenueByMonthDesign1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormReport_RevenueByMonthDesign.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormReport_RevenueByMonthViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReport_RevenueByMonthViewer.Designer.cs">
+      <DependentUpon>FormReport_RevenueByMonthViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReport_RevenueDesign1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormReport_RevenueDesign.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormReport_RoomOccupancyDesign1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormReport_RoomOccupancyDesign.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormReport_RoomOccupancyViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReport_RoomOccupancyViewer.Designer.cs">
+      <DependentUpon>FormReport_RoomOccupancyViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReport_ServiceOrdersDesign1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormReport_ServiceOrdersDesign.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormReport_ServiceOrdersViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReport_ServiceOrdersViewer.Designer.cs">
+      <DependentUpon>FormReport_ServiceOrdersViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReport_ServiceRevenueViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReport_ServiceRevenueViewer.Designer.cs">
+      <DependentUpon>FormReport_ServiceRevenueViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormReservations.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +217,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HotelManagementDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HotelManagementDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HotelManagementDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="LoginInfo.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
@@ -167,6 +237,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="SQLHotel&amp;Services %28V2.6%29.sql" />
     <EmbeddedResource Include="FormAvailableRooms.resx">
       <DependentUpon>FormAvailableRooms.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +258,41 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPayment.resx">
       <DependentUpon>FormPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport_PaymentBillDesign.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FormReport_PaymentBillDesign.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport_PaymentBillViewer.resx">
+      <DependentUpon>FormReport_PaymentBillViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport_RevenueByMonthDesign.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FormReport_RevenueByMonthDesign1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport_RevenueByMonthViewer.resx">
+      <DependentUpon>FormReport_RevenueByMonthViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport_RevenueDesign.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FormReport_RevenueDesign1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport_RoomOccupancyDesign.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FormReport_RoomOccupancyDesign1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport_RoomOccupancyViewer.resx">
+      <DependentUpon>FormReport_RoomOccupancyViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport_ServiceOrdersDesign.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FormReport_ServiceOrdersDesign1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport_ServiceOrdersViewer.resx">
+      <DependentUpon>FormReport_ServiceOrdersViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport_ServiceRevenueViewer.resx">
+      <DependentUpon>FormReport_ServiceRevenueViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormReservations.resx">
       <DependentUpon>FormReservations.cs</DependentUpon>
@@ -257,6 +363,17 @@
     <None Include="HotelManagementDataSet2.xss">
       <DependentUpon>HotelManagementDataSet2.xsd</DependentUpon>
     </None>
+    <None Include="HotelManagementDataSet3.xsc">
+      <DependentUpon>HotelManagementDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="HotelManagementDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HotelManagementDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HotelManagementDataSet3.xss">
+      <DependentUpon>HotelManagementDataSet3.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -275,6 +392,9 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

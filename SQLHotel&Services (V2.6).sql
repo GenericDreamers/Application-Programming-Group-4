@@ -367,7 +367,10 @@ Select * From Rooms, Reservations
 	  And CheckInDate < '2026-02-10 18:00:00'
 	  And PaymentStatus != 'Cancelled'
 
-create proc CalcPayment @reserID Char(10)
+
+
+go
+create procedure CalcPayment @reserID Char(10)
 As
 Begin
 	if (not exists (Select * from Reservations where ReserID = @reserID And PaymentStatus = 'Pending'))
@@ -398,7 +401,7 @@ Begin
 			FROM ServiceOrders, Services
 			Where ServiceOrders.ServiceID = Services.ServiceID 
 			  And ServiceOrders.GuestID = @guestID
-			  And ServiceOrders.OrderDate Between @cinDate AND @coutDate
+			  And ServiceOrders.OrderDate Between @cinDate AND @coutDate;
 
 			-- Calculate and insert results into table
 			Set @amount = (@roomPrice * @numDays) + @servicesCost;
@@ -413,9 +416,10 @@ Begin
 
 			Print 'Payment summary for reservation ID: ' + @reserID + CHAR(10)
 			    + 'Guest ID: ' + @guestID + CHAR(10)
-				+ 'Amount due: ' + CAST(@amount AS VARCHAR)
+				+ 'Amount due: ' + CAST(@amount AS VARCHAR);
 		end
 End
+go
 
 exec CalcPayment 'RES014'
 Select * From Payments
@@ -578,3 +582,95 @@ Create View LoyalGuests As
 		Guests.GuestID, FirstName, LastName, PhoneNumber, Email
 	HAVING 
 		SUM(DATEDIFF(DAY, CheckInDate, CheckOutDate)) > 30;
+
+
+		select * from ServiceRevenue	
+
+
+
+
+CREATE VIEW GuestServiceDetails AS
+SELECT 
+    ServiceOrders.ServiceOrderID,
+    ServiceOrders.GuestID,
+    CONCAT(Guests.FirstName, ' ', Guests.LastName) AS GuestName,
+    Services.ServiceID,
+    Services.ServiceName,
+    ServiceOrders.EmployeeID,
+    ServiceOrders.OrderDate,
+    Services.Price
+FROM 
+    ServiceOrders
+    JOIN Services ON ServiceOrders.ServiceID = Services.ServiceID
+    JOIN Guests   ON ServiceOrders.GuestID   = Guests.GuestID;
+GO
+
+-- Test thử với G001
+SELECT * FROM GuestServiceDetails WHERE GuestID = 'G001'
+
+go
+CREATE VIEW RevenueByMonth AS
+SELECT
+    MONTH(Reservations.CheckInDate) AS Month,
+    YEAR(Reservations.CheckInDate) AS Year,
+    SUM(Payments.Amount) AS RoomRevenue,
+    ISNULL((
+        SELECT SUM(Services.Price)
+        FROM ServiceOrders
+        JOIN Services ON ServiceOrders.ServiceID = Services.ServiceID
+        WHERE MONTH(ServiceOrders.OrderDate) = MONTH(Reservations.CheckInDate)
+          AND YEAR(ServiceOrders.OrderDate) = YEAR(Reservations.CheckInDate)
+    ), 0) AS ServiceRevenue,
+    SUM(Payments.Amount) + ISNULL((
+        SELECT SUM(Services.Price)
+        FROM ServiceOrders
+        JOIN Services ON ServiceOrders.ServiceID = Services.ServiceID
+        WHERE MONTH(ServiceOrders.OrderDate) = MONTH(Reservations.CheckInDate)
+          AND YEAR(ServiceOrders.OrderDate) = YEAR(Reservations.CheckInDate)
+    ), 0) AS TotalRevenue
+FROM
+    Payments
+    JOIN Reservations ON Payments.ReserID = Reservations.ReserID
+GROUP BY
+    YEAR(Reservations.CheckInDate),
+    MONTH(Reservations.CheckInDate);
+GO
+
+SELECT * FROM RevenueByMonth ORDER BY Year, Month;
+
+go
+CREATE VIEW RoomOccupancyRate AS
+SELECT
+    Towers.TowerID,
+    Towers.TowerName,
+    COUNT(DISTINCT Rooms.RoomID) AS TotalRooms,
+    COUNT(DISTINCT CASE 
+        WHEN Reservations.PaymentStatus != 'Cancelled'
+        AND GETDATE() BETWEEN Reservations.CheckInDate AND Reservations.CheckOutDate
+        THEN Rooms.RoomID 
+    END) AS OccupiedRooms,
+    COUNT(DISTINCT Rooms.RoomID) - COUNT(DISTINCT CASE 
+        WHEN Reservations.PaymentStatus != 'Cancelled'
+        AND GETDATE() BETWEEN Reservations.CheckInDate AND Reservations.CheckOutDate
+        THEN Rooms.RoomID 
+    END) AS AvailableRooms,
+    CAST(
+        COUNT(DISTINCT CASE 
+            WHEN Reservations.PaymentStatus != 'Cancelled'
+            AND GETDATE() BETWEEN Reservations.CheckInDate AND Reservations.CheckOutDate
+            THEN Rooms.RoomID 
+        END) * 100.0 / COUNT(DISTINCT Rooms.RoomID) 
+    AS DECIMAL(5,2)) AS OccupancyRate
+FROM
+    Towers
+    JOIN Rooms ON Towers.TowerID = Rooms.TowerID
+    LEFT JOIN Reservations ON Rooms.RoomID = Reservations.RoomID
+GROUP BY
+    Towers.TowerID,
+    Towers.TowerName;
+GO
+
+SELECT * FROM RoomOccupancyRate;
+
+
+select * from ReservationInvoiceDetails

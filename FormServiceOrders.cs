@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -82,5 +83,41 @@ namespace Group4Ap
 		{
 			this.serviceOrdersTableAdapter.Fill(this.hotelManagementDataSet.ServiceOrders);
 		}
-	}
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                db.openConnection();
+
+                string sql = "SELECT * FROM GuestServiceDetails WHERE GuestID = @GuestID";
+                SqlCommand cmd = new SqlCommand(sql, db.cnn);
+                cmd.Parameters.AddWithValue("@GuestID", GIDField.Text);
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                if (dt.Rows.Count == 0)
+                {
+                    MessageBox.Show("Khách này chưa sử dụng dịch vụ nào.",
+                                    "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                FormReport_ServiceOrdersViewer f = new FormReport_ServiceOrdersViewer();
+                f.SetDataSource(dt);
+                f.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                db.closeConnection();
+            }
+        }
+    }
 }

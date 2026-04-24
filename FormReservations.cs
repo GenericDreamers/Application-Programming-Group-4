@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,19 +21,21 @@ namespace Group4Ap
 		databaseConnection db = new databaseConnection();
 		private void FormReservation_Load(object sender, EventArgs e)
 		{
-			showData();
-			RIDField.DataBindings.Add("Text", dataGridView1.DataSource, "ReserID");
-			GIDField.DataBindings.Add("Text", dataGridView1.DataSource, "GuestID");
-			RoomIDField.DataBindings.Add("Text", dataGridView1.DataSource, "RoomID");
-			PSField.DataBindings.Add("Text", dataGridView1.DataSource, "PaymentStatus");
-			CIField.DataBindings.Add("Text", dataGridView1.DataSource, "CheckInDate");
-			COField.DataBindings.Add("Text", dataGridView1.DataSource, "CheckOutDate");
+            showData();
+            RIDField.DataBindings.Add("Text", dataGridView1.DataSource, "ReserID");
+            GIDField.DataBindings.Add("Text", dataGridView1.DataSource, "GuestID");
+            RoomIDField.DataBindings.Add("Text", dataGridView1.DataSource, "RoomID");
+            PSField.DataBindings.Add("Text", dataGridView1.DataSource, "PaymentStatus");
+            CIField.DataBindings.Add("Text", dataGridView1.DataSource, "CheckInDate");
+            COField.DataBindings.Add("Text", dataGridView1.DataSource, "CheckOutDate");
 
-			GIDField.DataSource = db.GetTable("Select GuestID From Guests");
-			GIDField.ValueMember = "GuestID";
-			RoomIDField.DataSource = db.GetTable("Select RoomID From Rooms");
-			RoomIDField.ValueMember = "RoomID";
-		}
+            GIDField.DataSource = db.GetTable("Select GuestID From Guests");
+            GIDField.ValueMember = "GuestID";
+            RoomIDField.DataSource = db.GetTable("Select RoomID From Rooms");
+            RoomIDField.ValueMember = "RoomID";
+
+
+        }
 		private void showData()
 		{
 			this.reservationsTableAdapter.Fill(this.hotelManagementDataSet.Reservations);
@@ -45,19 +48,59 @@ namespace Group4Ap
 
 		private void btnLuu_Click(object sender, EventArgs e)
 		{
-			String sql = String.Format("EXEC SP_THEMRESER @ReserID='{0}',@GuestID='{1}',@RoomID='{2}',@CheckInDate='{3}',@CheckOutDate='{4}', @PaymentStatus='{5}'",
-			RIDField.Text, GIDField.Text, RoomIDField.Text, CIField.Text, COField.Text, PSField.Text);
-			db.ExecuteCommand(sql);
-			showData();
-		}
+            try
+            {
+                String sql = String.Format("EXEC SP_THEMRESER @ReserID='{0}',@GuestID='{1}',@RoomID='{2}',@CheckInDate='{3}',@CheckOutDate='{4}', @PaymentStatus='{5}'",
+            RIDField.Text, GIDField.Text, RoomIDField.Text, CIField.Text, COField.Text, PSField.Text);
+                db.ExecuteCommand(sql);
+                showData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
 		private void btnSua_Click(object sender, EventArgs e)
 		{
-			String sql = String.Format("UPDATE Reservations SET GuestID = '{1}', RoomID = '{2}', CheckInDate = CONVERT(DATETIME, '{3}', 103), CheckOutDate = CONVERT(DATETIME, '{4}', 103), PaymentStatus = '{5}' WHERE ReserID = '{0}'",
-				RIDField.Text, GIDField.Text, RoomIDField.Text, CIField.Text, COField.Text, PSField.Text);
-			db.ExecuteCommand(sql);
-			showData();
-		}
+            try
+            {
+
+                //String sql = String.Format("UPDATE Reservations SET GuestID = '{1}', RoomID = '{2}', CheckInDate = CONVERT(DATETIME, '{3}', 103), CheckOutDate = CONVERT(DATETIME, '{4}', 103), PaymentStatus = '{5}' WHERE ReserID = '{0}'",
+                //    RIDField.Text, GIDField.Text, RoomIDField.Text, CIField.Text, COField.Text, PSField.Text);
+                //String sql = String.Format("UPDATE Reservations SET GuestID = '{1}', RoomID = '{2}', CheckInDate = CONVERT(DATETIME, '{3}', 103), CheckOutDate = CONVERT(DATETIME, '{4}', 103), PaymentStatus = '{5}' WHERE ReserID = '{0}'",
+                //    RIDField.Text, GIDField.Text, RoomIDField.Text, DateTime.Parse(CIField.Text), DateTime.Parse(COField.Text), PSField.Text);
+                //db.ExecuteCommand(sql);
+                //showData();
+
+
+
+
+
+                db.openConnection();
+                SqlCommand cmd = new SqlCommand(
+                    "UPDATE Reservations SET GuestID=@GuestID, RoomID=@RoomID, " +
+                    "CheckInDate=@CheckInDate, CheckOutDate=@CheckOutDate, PaymentStatus=@PaymentStatus " +
+                    "WHERE ReserID=@ReserID", db.cnn);
+                cmd.Parameters.AddWithValue("@ReserID", RIDField.Text);
+                cmd.Parameters.AddWithValue("@GuestID", GIDField.Text);
+                cmd.Parameters.AddWithValue("@RoomID", RoomIDField.Text);
+                cmd.Parameters.AddWithValue("@CheckInDate",
+                    DateTime.ParseExact(CIField.Text, "yyyy-MM-dd", null));
+                cmd.Parameters.AddWithValue("@CheckOutDate",
+                    DateTime.ParseExact(COField.Text, "yyyy-MM-dd", null));
+                cmd.Parameters.AddWithValue("@PaymentStatus", PSField.Text);
+                cmd.ExecuteNonQuery();
+                showData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+        }
 
 		private void btnXoa_Click(object sender, EventArgs e)
 		{

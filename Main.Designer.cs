@@ -64,6 +64,7 @@
             // 
             // panelMenu
             // 
+            this.panelMenu.AutoScroll = true;
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(57)))), ((int)(((byte)(71)))));
             this.panelMenu.Controls.Add(this.panelMoreFeatures);
             this.panelMenu.Controls.Add(this.btnOtherFeatures);
@@ -84,7 +85,7 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(470, 1280);
+            this.panelMenu.Size = new System.Drawing.Size(470, 1102);
             this.panelMenu.TabIndex = 0;
             // 
             // panelMoreFeatures
@@ -448,7 +449,7 @@
             this.guna2Panel2.Location = new System.Drawing.Point(470, 0);
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1740, 70);
+            this.guna2Panel2.Size = new System.Drawing.Size(1472, 70);
             this.guna2Panel2.TabIndex = 1;
             // 
             // guna2Button1
@@ -464,7 +465,7 @@
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
             this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
             this.guna2Button1.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2Button1.Location = new System.Drawing.Point(1500, 0);
+            this.guna2Button1.Location = new System.Drawing.Point(1232, 0);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(0);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(80, 70);
@@ -484,7 +485,7 @@
             this.guna2Button5.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
             this.guna2Button5.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.Image")));
             this.guna2Button5.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button5.Location = new System.Drawing.Point(1580, 0);
+            this.guna2Button5.Location = new System.Drawing.Point(1312, 0);
             this.guna2Button5.Margin = new System.Windows.Forms.Padding(0);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.Size = new System.Drawing.Size(80, 70);
@@ -504,7 +505,7 @@
             this.btnExit.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnExit.Location = new System.Drawing.Point(1660, 0);
+            this.btnExit.Location = new System.Drawing.Point(1392, 0);
             this.btnExit.Margin = new System.Windows.Forms.Padding(0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(80, 70);
@@ -524,7 +525,7 @@
             this.panel1.Location = new System.Drawing.Point(470, 70);
             this.panel1.Margin = new System.Windows.Forms.Padding(0, 0, 1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1740, 10);
+            this.panel1.Size = new System.Drawing.Size(1472, 10);
             this.panel1.TabIndex = 2;
             // 
             // panelDesktop
@@ -535,7 +536,7 @@
             this.panelDesktop.Location = new System.Drawing.Point(470, 80);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(0);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1740, 1200);
+            this.panelDesktop.Size = new System.Drawing.Size(1472, 1022);
             this.panelDesktop.TabIndex = 3;
             // 
             // label1
@@ -544,9 +545,9 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(312, 565);
+            this.label1.Location = new System.Drawing.Point(178, 476);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1116, 71);
+            this.label1.Size = new System.Drawing.Size(714, 46);
             this.label1.TabIndex = 1;
             this.label1.Text = "NHÓM 4 - HỆ THỐNG QUẢN LÝ KHÁCH SẠN";
             // 
@@ -562,7 +563,7 @@
             // Main
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(2210, 1280);
+            this.ClientSize = new System.Drawing.Size(1942, 1102);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2Panel2);

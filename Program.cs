@@ -16,8 +16,28 @@ namespace Group4Ap
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Main());
-			//Application.Run(new FormPayment());
-		}
-	}
+
+            //test functions
+            //Application.Run(new FormLogin());
+
+            //Application.Run(new FormAvailableRooms());
+            //Application.Run(new FormEmployees());
+            //Application.Run(new FormGuests());
+            //Application.Run(new FormMiscSearch());
+            Application.Run(new FormPayment()); //xac nhan thanh toan khong nhan pending
+            //Application.Run(new FormReservations());
+            //Application.Run(new FormRooms());
+            //Application.Run(new FormServiceOrders());
+            //Application.Run(new FormServiceRevenue());
+            //Application.Run(new FormServices());
+
+            //test bao cao
+            //Application.Run(new FormPayment());
+            //Application.Run(new FormServiceOrders());
+            //Application.Run(new FormServiceRevenue());
+            //Application.Run(new FormRooms());
+
+
+        }
+    }
 }

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -27,8 +28,8 @@ namespace Group4Ap
 
 		private void FormPayment_Load(object sender, EventArgs e)
 		{
-            // TODO: This line of code loads data into the 'hotelManagementDataSet2.ReservationInvoiceDetails' table. You can move, or remove it, as needed.
-            this.reservationInvoiceDetailsTableAdapter2.Fill(this.hotelManagementDataSet2.ReservationInvoiceDetails);
+            // TODO: This line of code loads data into the 'hotelManagementDataSet3.ReservationInvoiceDetails' table. You can move, or remove it, as needed.
+            
             showData();
 			RIDField.DataBindings.Add("Text", dataGridView1.DataSource, "ReserID");
 			GIDField.DataBindings.Add("Text", dataGridView1.DataSource, "GuestID");
@@ -42,10 +43,10 @@ namespace Group4Ap
 		}
 		private void showData()
 		{
-			this.reservationInvoiceDetailsTableAdapter1.Fill(this.hotelManagementDataSet1.ReservationInvoiceDetails);
-		}
+            this.reservationInvoiceDetailsTableAdapter3.Fill(this.hotelManagementDataSet3.ReservationInvoiceDetails);
+        }
 
-		private void checkPaymentStatus(){
+        private void checkPaymentStatus(){
 			if (PSField.Text == "Paid" || PSField.Text == "Cancelled")
 			{
 				btnLuu.Enabled = false;
@@ -60,5 +61,36 @@ namespace Group4Ap
 		{
 			checkPaymentStatus();
 		}
-	}
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            db.openConnection();
+            SqlCommand cmd = new SqlCommand("CalcPayment", db.cnn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@reserID", RIDField.Text);
+
+            string sqlSelect = "SELECT * FROM ReservationInvoiceDetails WHERE ReserID = '" + RIDField.Text + "'";
+            SqlDataAdapter da = new SqlDataAdapter(sqlSelect, db.cnn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            FormReport_PaymentBillViewer f = new FormReport_PaymentBillViewer();
+            f.SetDataSource(dt);
+
+            f.ShowDialog();
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+			try { 
+				Application.Exit();
+            }
+			catch (Exception ex)
+			{
+				MessageBox.Show("Lỗi: " + ex.Message, "Error",
+								MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+            }
+        }
+    }
 }

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ntung\\Downloads\\Group4Ap\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|C:\\Users\\ntung\\Downloads\\Group4Ap\\formemployees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|solutionrelative:formemployees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|c:\\users\\ntung\\downloads\\group4ap\\formrooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|solutionrelative:formrooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|C:\\Users\\ntung\\Downloads\\Group4Ap\\formrooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|solutionrelative:formrooms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|c:\\users\\ntung\\downloads\\group4ap\\formemployees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|solutionrelative:formemployees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DA2A7CE-F7C4-4CA9-84DE-FC8F2E21DEFE}|Group4Ap.csproj|C:\\Users\\ntung\\Downloads\\Group4Ap\\formserviceorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,13 +66,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FormRooms.cs",
               "DocumentMoniker": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormRooms.cs",
               "RelativeDocumentMoniker": "FormRooms.cs",
               "ToolTip": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormRooms.cs",
               "RelativeToolTip": "FormRooms.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAnwCwAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAjwCoAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-22T09:19:31.927Z",
               "EditorCaption": ""
@@ -178,19 +178,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FormRooms.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormRooms.cs",
               "RelativeDocumentMoniker": "FormRooms.cs",
               "ToolTip": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormRooms.cs [Design]",
               "RelativeToolTip": "FormRooms.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-21T16:56:58.451Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-04-21T16:56:58.451Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "FormEmployees.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ntung\\Downloads\\Group4Ap\\FormEmployees.cs",
               "RelativeDocumentMoniker": "FormEmployees.cs",

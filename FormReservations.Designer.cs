@@ -99,7 +99,7 @@
             this.PSField.Location = new System.Drawing.Point(676, 247);
             this.PSField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.PSField.Name = "PSField";
-            this.PSField.Size = new System.Drawing.Size(530, 100);
+            this.PSField.Size = new System.Drawing.Size(530, 67);
             this.PSField.TabIndex = 125;
             // 
             // RoomIDField
@@ -110,7 +110,7 @@
             this.RoomIDField.Location = new System.Drawing.Point(52, 247);
             this.RoomIDField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.RoomIDField.Name = "RoomIDField";
-            this.RoomIDField.Size = new System.Drawing.Size(530, 100);
+            this.RoomIDField.Size = new System.Drawing.Size(530, 67);
             this.RoomIDField.TabIndex = 124;
             // 
             // GIDField
@@ -121,20 +121,20 @@
             this.GIDField.Location = new System.Drawing.Point(676, 96);
             this.GIDField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GIDField.Name = "GIDField";
-            this.GIDField.Size = new System.Drawing.Size(530, 100);
+            this.GIDField.Size = new System.Drawing.Size(530, 67);
             this.GIDField.TabIndex = 123;
             // 
             // CIField
             // 
             this.CIField.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CIField.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(57)))), ((int)(((byte)(71)))));
-            this.CIField.CustomFormat = "dd-MM-yyyy hh:mm:ss";
+            this.CIField.CustomFormat = "yyyy-MM-dd";
             this.CIField.Font = new System.Drawing.Font("Segoe UI Semibold", 25.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CIField.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.CIField.Location = new System.Drawing.Point(283, 334);
             this.CIField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CIField.Name = "CIField";
-            this.CIField.Size = new System.Drawing.Size(923, 99);
+            this.CIField.Size = new System.Drawing.Size(923, 65);
             this.CIField.TabIndex = 122;
             // 
             // label3
@@ -145,7 +145,7 @@
             this.label3.Location = new System.Drawing.Point(44, 340);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 50);
+            this.label3.Size = new System.Drawing.Size(107, 32);
             this.label3.TabIndex = 121;
             this.label3.Text = "Check in";
             // 
@@ -158,7 +158,7 @@
             this.RIDField.Location = new System.Drawing.Point(52, 96);
             this.RIDField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.RIDField.Name = "RIDField";
-            this.RIDField.Size = new System.Drawing.Size(530, 99);
+            this.RIDField.Size = new System.Drawing.Size(530, 65);
             this.RIDField.TabIndex = 109;
             // 
             // lblHoTen
@@ -169,7 +169,7 @@
             this.lblHoTen.Location = new System.Drawing.Point(668, 34);
             this.lblHoTen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHoTen.Name = "lblHoTen";
-            this.lblHoTen.Size = new System.Drawing.Size(184, 50);
+            this.lblHoTen.Size = new System.Drawing.Size(121, 32);
             this.lblHoTen.TabIndex = 112;
             this.lblHoTen.Text = "Mã khách";
             // 
@@ -181,7 +181,7 @@
             this.lblMSV.Location = new System.Drawing.Point(43, 34);
             this.lblMSV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMSV.Name = "lblMSV";
-            this.lblMSV.Size = new System.Drawing.Size(260, 50);
+            this.lblMSV.Size = new System.Drawing.Size(170, 32);
             this.lblMSV.TabIndex = 111;
             this.lblMSV.Text = "Mã đặt phòng";
             // 
@@ -195,7 +195,7 @@
             this.lblTitle.Location = new System.Drawing.Point(35, 25);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(547, 71);
+            this.lblTitle.Size = new System.Drawing.Size(349, 46);
             this.lblTitle.TabIndex = 110;
             this.lblTitle.Text = "Danh sách đặt phòng";
             // 
@@ -389,7 +389,7 @@
             this.label1.Location = new System.Drawing.Point(44, 189);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 50);
+            this.label1.Size = new System.Drawing.Size(126, 32);
             this.label1.TabIndex = 119;
             this.label1.Text = "Mã phòng";
             // 
@@ -426,13 +426,13 @@
             // COField
             // 
             this.COField.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(57)))), ((int)(((byte)(71)))));
-            this.COField.CustomFormat = "dd-MM-yyyy hh:mm:ss";
+            this.COField.CustomFormat = "yyyy-MM-dd";
             this.COField.Font = new System.Drawing.Font("Segoe UI Semibold", 25.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.COField.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.COField.Location = new System.Drawing.Point(283, 433);
             this.COField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.COField.Name = "COField";
-            this.COField.Size = new System.Drawing.Size(923, 99);
+            this.COField.Size = new System.Drawing.Size(923, 65);
             this.COField.TabIndex = 127;
             // 
             // label4
@@ -443,7 +443,7 @@
             this.label4.Location = new System.Drawing.Point(44, 433);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(190, 50);
+            this.label4.Size = new System.Drawing.Size(124, 32);
             this.label4.TabIndex = 126;
             this.label4.Text = "Check out";
             // 
@@ -493,7 +493,7 @@
             // FormReservations
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1740, 1200);
+            this.ClientSize = new System.Drawing.Size(1740, 1102);
             this.Controls.Add(this.btnTao);
             this.Controls.Add(this.panelDatPhong);
             this.Controls.Add(this.lblTitle);

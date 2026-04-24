@@ -29,8 +29,8 @@
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.rBtnNo = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.MPField = new System.Windows.Forms.TextBox();
@@ -69,6 +69,7 @@
             this.MLPField = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.g1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSet)).BeginInit();
@@ -88,7 +89,7 @@
             this.rBtnNo.Location = new System.Drawing.Point(146, 0);
             this.rBtnNo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rBtnNo.Name = "rBtnNo";
-            this.rBtnNo.Size = new System.Drawing.Size(164, 54);
+            this.rBtnNo.Size = new System.Drawing.Size(106, 36);
             this.rBtnNo.TabIndex = 1;
             this.rBtnNo.Text = "Không";
             this.rBtnNo.UseVisualStyleBackColor = true;
@@ -102,7 +103,7 @@
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label3.Size = new System.Drawing.Size(232, 50);
+            this.label3.Size = new System.Drawing.Size(151, 32);
             this.label3.TabIndex = 112;
             this.label3.Text = "Đang bảo trì";
             // 
@@ -114,7 +115,7 @@
             this.MPField.Location = new System.Drawing.Point(22, 77);
             this.MPField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MPField.Name = "MPField";
-            this.MPField.Size = new System.Drawing.Size(462, 99);
+            this.MPField.Size = new System.Drawing.Size(462, 65);
             this.MPField.TabIndex = 96;
             // 
             // lblHoTen
@@ -126,7 +127,7 @@
             this.lblHoTen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHoTen.Name = "lblHoTen";
             this.lblHoTen.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblHoTen.Size = new System.Drawing.Size(266, 50);
+            this.lblHoTen.Size = new System.Drawing.Size(172, 32);
             this.lblHoTen.TabIndex = 100;
             this.lblHoTen.Text = "Mã loại phòng";
             // 
@@ -139,7 +140,7 @@
             this.lblMSV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMSV.Name = "lblMSV";
             this.lblMSV.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblMSV.Size = new System.Drawing.Size(195, 50);
+            this.lblMSV.Size = new System.Drawing.Size(126, 32);
             this.lblMSV.TabIndex = 99;
             this.lblMSV.Text = "Mã phòng";
             // 
@@ -167,7 +168,7 @@
             this.rBtnYes.Location = new System.Drawing.Point(8, -4);
             this.rBtnYes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rBtnYes.Name = "rBtnYes";
-            this.rBtnYes.Size = new System.Drawing.Size(98, 54);
+            this.rBtnYes.Size = new System.Drawing.Size(64, 36);
             this.rBtnYes.TabIndex = 0;
             this.rBtnYes.Text = "Có";
             this.rBtnYes.UseVisualStyleBackColor = true;
@@ -180,7 +181,7 @@
             this.MTField.Location = new System.Drawing.Point(681, 213);
             this.MTField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MTField.Name = "MTField";
-            this.MTField.Size = new System.Drawing.Size(462, 100);
+            this.MTField.Size = new System.Drawing.Size(462, 67);
             this.MTField.TabIndex = 116;
             // 
             // label4
@@ -192,7 +193,7 @@
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label4.Size = new System.Drawing.Size(139, 50);
+            this.label4.Size = new System.Drawing.Size(92, 32);
             this.label4.TabIndex = 114;
             this.label4.Text = "Mã tòa";
             // 
@@ -238,7 +239,7 @@
             this.TField.Location = new System.Drawing.Point(22, 336);
             this.TField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TField.Name = "TField";
-            this.TField.Size = new System.Drawing.Size(462, 99);
+            this.TField.Size = new System.Drawing.Size(462, 65);
             this.TField.TabIndex = 113;
             // 
             // label2
@@ -250,7 +251,7 @@
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(105, 50);
+            this.label2.Size = new System.Drawing.Size(68, 32);
             this.label2.TabIndex = 111;
             this.label2.Text = "Tầng";
             // 
@@ -262,7 +263,7 @@
             this.SPField.Location = new System.Drawing.Point(681, 336);
             this.SPField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SPField.Name = "SPField";
-            this.SPField.Size = new System.Drawing.Size(462, 99);
+            this.SPField.Size = new System.Drawing.Size(462, 65);
             this.SPField.TabIndex = 109;
             // 
             // label1
@@ -274,7 +275,7 @@
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(184, 50);
+            this.label1.Size = new System.Drawing.Size(118, 32);
             this.label1.TabIndex = 110;
             this.label1.Text = "Số phòng";
             // 
@@ -346,14 +347,14 @@
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(57)))), ((int)(((byte)(71)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(77)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(57)))), ((int)(((byte)(71)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(77)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.roomIDDataGridViewTextBoxColumn,
@@ -363,15 +364,15 @@
             this.roomFloorDataGridViewTextBoxColumn,
             this.isUnderMaintenanceDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.roomsBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(57)))), ((int)(((byte)(71)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(77)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(68, 582);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(57)))), ((int)(((byte)(71)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(77)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.Location = new System.Drawing.Point(68, 711);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -446,7 +447,7 @@
             this.MLPField.Location = new System.Drawing.Point(22, 213);
             this.MLPField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MLPField.Name = "MLPField";
-            this.MLPField.Size = new System.Drawing.Size(462, 100);
+            this.MLPField.Size = new System.Drawing.Size(462, 67);
             this.MLPField.TabIndex = 118;
             // 
             // label5
@@ -459,7 +460,7 @@
             this.label5.Location = new System.Drawing.Point(35, 25);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(692, 71);
+            this.label5.Size = new System.Drawing.Size(440, 46);
             this.label5.TabIndex = 119;
             this.label5.Text = "Danh sách thông tin phòng";
             // 
@@ -483,10 +484,26 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1194, 424);
             this.guna2Panel1.TabIndex = 120;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(57)))), ((int)(((byte)(71)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1330, 572);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(352, 78);
+            this.button1.TabIndex = 121;
+            this.button1.Text = "In báo cáo";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormRooms
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1740, 1200);
+            this.ClientSize = new System.Drawing.Size(1740, 1055);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnThoat);
@@ -558,5 +575,6 @@
 		private System.Windows.Forms.ComboBox MLPField;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -46,6 +46,9 @@
             this.serviceRevenueTableAdapter = new Group4Ap.HotelManagementDataSetTableAdapters.ServiceRevenueTableAdapter();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.serviceRevenueBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSet)).BeginInit();
@@ -61,7 +64,7 @@
             this.GNField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GNField.Name = "GNField";
             this.GNField.ReadOnly = true;
-            this.GNField.Size = new System.Drawing.Size(498, 99);
+            this.GNField.Size = new System.Drawing.Size(498, 65);
             this.GNField.TabIndex = 83;
             // 
             // GIDField
@@ -73,7 +76,7 @@
             this.GIDField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GIDField.Name = "GIDField";
             this.GIDField.ReadOnly = true;
-            this.GIDField.Size = new System.Drawing.Size(498, 99);
+            this.GIDField.Size = new System.Drawing.Size(498, 65);
             this.GIDField.TabIndex = 80;
             // 
             // RIDField
@@ -85,7 +88,7 @@
             this.RIDField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.RIDField.Name = "RIDField";
             this.RIDField.ReadOnly = true;
-            this.RIDField.Size = new System.Drawing.Size(498, 99);
+            this.RIDField.Size = new System.Drawing.Size(498, 65);
             this.RIDField.TabIndex = 78;
             // 
             // lblMaCode
@@ -96,7 +99,7 @@
             this.lblMaCode.Location = new System.Drawing.Point(14, 345);
             this.lblMaCode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMaCode.Name = "lblMaCode";
-            this.lblMaCode.Size = new System.Drawing.Size(292, 50);
+            this.lblMaCode.Size = new System.Drawing.Size(189, 32);
             this.lblMaCode.TabIndex = 84;
             this.lblMaCode.Text = "Tổng doanh thu";
             // 
@@ -108,7 +111,7 @@
             this.lblHoTen.Location = new System.Drawing.Point(14, 178);
             this.lblHoTen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHoTen.Name = "lblHoTen";
-            this.lblHoTen.Size = new System.Drawing.Size(212, 50);
+            this.lblHoTen.Size = new System.Drawing.Size(137, 32);
             this.lblHoTen.TabIndex = 82;
             this.lblHoTen.Text = "Tên dịch vụ";
             // 
@@ -120,7 +123,7 @@
             this.lblMSV.Location = new System.Drawing.Point(14, 22);
             this.lblMSV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMSV.Name = "lblMSV";
-            this.lblMSV.Size = new System.Drawing.Size(207, 50);
+            this.lblMSV.Size = new System.Drawing.Size(134, 32);
             this.lblMSV.TabIndex = 81;
             this.lblMSV.Text = "Mã dịch vụ";
             // 
@@ -207,7 +210,7 @@
             this.label3.Location = new System.Drawing.Point(35, 25);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(475, 71);
+            this.label3.Size = new System.Drawing.Size(303, 46);
             this.label3.TabIndex = 117;
             this.label3.Text = "Doanh thu dịch vụ";
             // 
@@ -225,10 +228,58 @@
             this.guna2Panel1.Size = new System.Drawing.Size(578, 539);
             this.guna2Panel1.TabIndex = 118;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(57)))), ((int)(((byte)(71)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(47, 802);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(352, 78);
+            this.button1.TabIndex = 122;
+            this.button1.Text = "In báo cáo theo tháng";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(57)))), ((int)(((byte)(71)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(47, 690);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(352, 78);
+            this.button2.TabIndex = 123;
+            this.button2.Text = "In báo cáo dịch vụ";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.BackColor = System.Drawing.Color.White;
+            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThoat.Font = new System.Drawing.Font("Segoe UI Semibold", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(57)))), ((int)(((byte)(71)))));
+            this.btnThoat.Location = new System.Drawing.Point(47, 899);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(352, 78);
+            this.btnThoat.TabIndex = 124;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
             // FormServiceRevenue
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1740, 1200);
+            this.ClientSize = new System.Drawing.Size(1740, 1102);
+            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
@@ -264,5 +315,8 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn totalRevenueDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnThoat;
     }
 }

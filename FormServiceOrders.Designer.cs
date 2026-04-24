@@ -65,6 +65,7 @@
             this.EIDField = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.servicesBindingSource)).BeginInit();
@@ -104,7 +105,7 @@
             this.SOIField.Location = new System.Drawing.Point(33, 82);
             this.SOIField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SOIField.Name = "SOIField";
-            this.SOIField.Size = new System.Drawing.Size(479, 99);
+            this.SOIField.Size = new System.Drawing.Size(479, 65);
             this.SOIField.TabIndex = 89;
             // 
             // lblHoTen
@@ -115,7 +116,7 @@
             this.lblHoTen.Location = new System.Drawing.Point(588, 23);
             this.lblHoTen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHoTen.Name = "lblHoTen";
-            this.lblHoTen.Size = new System.Drawing.Size(184, 50);
+            this.lblHoTen.Size = new System.Drawing.Size(121, 32);
             this.lblHoTen.TabIndex = 93;
             this.lblHoTen.Text = "Mã khách";
             // 
@@ -127,7 +128,7 @@
             this.lblMSV.Location = new System.Drawing.Point(24, 23);
             this.lblMSV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMSV.Name = "lblMSV";
-            this.lblMSV.Size = new System.Drawing.Size(222, 50);
+            this.lblMSV.Size = new System.Drawing.Size(144, 32);
             this.lblMSV.TabIndex = 92;
             this.lblMSV.Text = "Mã sử dụng";
             // 
@@ -232,7 +233,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(47, 603);
+            this.dataGridView1.Location = new System.Drawing.Point(47, 726);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -289,7 +290,7 @@
             this.label2.Location = new System.Drawing.Point(588, 154);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(251, 50);
+            this.label2.Size = new System.Drawing.Size(163, 32);
             this.label2.TabIndex = 102;
             this.label2.Text = "Mã nhân viên";
             // 
@@ -301,7 +302,7 @@
             this.label1.Location = new System.Drawing.Point(24, 154);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 50);
+            this.label1.Size = new System.Drawing.Size(134, 32);
             this.label1.TabIndex = 101;
             this.label1.Text = "Mã dịch vụ";
             // 
@@ -340,19 +341,19 @@
             this.label3.Location = new System.Drawing.Point(24, 290);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(180, 50);
+            this.label3.Size = new System.Drawing.Size(116, 32);
             this.label3.TabIndex = 104;
             this.label3.Text = "Thời gian";
             // 
             // ODField
             // 
-            this.ODField.CustomFormat = "dd-MM-yyyy hh:mm:ss";
+            this.ODField.CustomFormat = "yyyy-MM-dd";
             this.ODField.Font = new System.Drawing.Font("Segoe UI Semibold", 25.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ODField.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.ODField.Location = new System.Drawing.Point(33, 357);
             this.ODField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ODField.Name = "ODField";
-            this.ODField.Size = new System.Drawing.Size(1036, 99);
+            this.ODField.Size = new System.Drawing.Size(1036, 65);
             this.ODField.TabIndex = 105;
             // 
             // GIDField
@@ -362,7 +363,7 @@
             this.GIDField.Location = new System.Drawing.Point(597, 82);
             this.GIDField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GIDField.Name = "GIDField";
-            this.GIDField.Size = new System.Drawing.Size(472, 100);
+            this.GIDField.Size = new System.Drawing.Size(472, 67);
             this.GIDField.TabIndex = 106;
             // 
             // SIDField
@@ -372,7 +373,7 @@
             this.SIDField.Location = new System.Drawing.Point(33, 212);
             this.SIDField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SIDField.Name = "SIDField";
-            this.SIDField.Size = new System.Drawing.Size(479, 100);
+            this.SIDField.Size = new System.Drawing.Size(479, 67);
             this.SIDField.TabIndex = 107;
             // 
             // EIDField
@@ -382,7 +383,7 @@
             this.EIDField.Location = new System.Drawing.Point(597, 212);
             this.EIDField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.EIDField.Name = "EIDField";
-            this.EIDField.Size = new System.Drawing.Size(472, 100);
+            this.EIDField.Size = new System.Drawing.Size(472, 67);
             this.EIDField.TabIndex = 108;
             // 
             // label4
@@ -395,7 +396,7 @@
             this.label4.Location = new System.Drawing.Point(35, 25);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(682, 71);
+            this.label4.Size = new System.Drawing.Size(434, 46);
             this.label4.TabIndex = 118;
             this.label4.Text = "Danh sách sử dụng dịch vụ";
             // 
@@ -417,10 +418,26 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1112, 457);
             this.guna2Panel1.TabIndex = 119;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(57)))), ((int)(((byte)(71)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1323, 563);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(352, 78);
+            this.button1.TabIndex = 120;
+            this.button1.Text = "In hóa đơn";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormServiceOrders
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1740, 1200);
+            this.ClientSize = new System.Drawing.Size(1740, 1102);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnThoat);
@@ -486,5 +503,6 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn OrderDate;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.Button button1;
     }
 }

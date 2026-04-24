@@ -83,17 +83,6 @@
             this.ServiceCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PaymentStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reserIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.guestIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.guestNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roomIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roomTypeNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roomPricePerDayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stayDurationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roomCostDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.serviceCostDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.totalCostDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.paymentStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guestsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationInvoiceDetailsBindingSource3)).BeginInit();
@@ -329,7 +318,7 @@
             // 
             this.TCField.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TCField.Font = new System.Drawing.Font("Segoe UI Semibold", 25.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TCField.Location = new System.Drawing.Point(42, 556);
+            this.TCField.Location = new System.Drawing.Point(42, 543);
             this.TCField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TCField.Name = "TCField";
             this.TCField.ReadOnly = true;
@@ -471,20 +460,9 @@
             this.RoomCost,
             this.ServiceCost,
             this.TotalCost,
-            this.PaymentStatus,
-            this.reserIDDataGridViewTextBoxColumn,
-            this.guestIDDataGridViewTextBoxColumn,
-            this.guestNameDataGridViewTextBoxColumn,
-            this.roomIDDataGridViewTextBoxColumn,
-            this.roomTypeNameDataGridViewTextBoxColumn,
-            this.roomPricePerDayDataGridViewTextBoxColumn,
-            this.stayDurationDataGridViewTextBoxColumn,
-            this.roomCostDataGridViewTextBoxColumn,
-            this.serviceCostDataGridViewTextBoxColumn,
-            this.totalCostDataGridViewTextBoxColumn,
-            this.paymentStatusDataGridViewTextBoxColumn});
+            this.PaymentStatus});
             this.dataGridView1.DataSource = this.reservationInvoiceDetailsBindingSource7;
-            this.dataGridView1.Location = new System.Drawing.Point(50, 769);
+            this.dataGridView1.Location = new System.Drawing.Point(50, 746);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -609,99 +587,6 @@
             this.PaymentStatus.Name = "PaymentStatus";
             this.PaymentStatus.Width = 125;
             // 
-            // reserIDDataGridViewTextBoxColumn
-            // 
-            this.reserIDDataGridViewTextBoxColumn.DataPropertyName = "ReserID";
-            this.reserIDDataGridViewTextBoxColumn.HeaderText = "ReserID";
-            this.reserIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.reserIDDataGridViewTextBoxColumn.Name = "reserIDDataGridViewTextBoxColumn";
-            this.reserIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // guestIDDataGridViewTextBoxColumn
-            // 
-            this.guestIDDataGridViewTextBoxColumn.DataPropertyName = "GuestID";
-            this.guestIDDataGridViewTextBoxColumn.HeaderText = "GuestID";
-            this.guestIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.guestIDDataGridViewTextBoxColumn.Name = "guestIDDataGridViewTextBoxColumn";
-            this.guestIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // guestNameDataGridViewTextBoxColumn
-            // 
-            this.guestNameDataGridViewTextBoxColumn.DataPropertyName = "GuestName";
-            this.guestNameDataGridViewTextBoxColumn.HeaderText = "GuestName";
-            this.guestNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.guestNameDataGridViewTextBoxColumn.Name = "guestNameDataGridViewTextBoxColumn";
-            this.guestNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.guestNameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // roomIDDataGridViewTextBoxColumn
-            // 
-            this.roomIDDataGridViewTextBoxColumn.DataPropertyName = "RoomID";
-            this.roomIDDataGridViewTextBoxColumn.HeaderText = "RoomID";
-            this.roomIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.roomIDDataGridViewTextBoxColumn.Name = "roomIDDataGridViewTextBoxColumn";
-            this.roomIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // roomTypeNameDataGridViewTextBoxColumn
-            // 
-            this.roomTypeNameDataGridViewTextBoxColumn.DataPropertyName = "RoomTypeName";
-            this.roomTypeNameDataGridViewTextBoxColumn.HeaderText = "RoomTypeName";
-            this.roomTypeNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.roomTypeNameDataGridViewTextBoxColumn.Name = "roomTypeNameDataGridViewTextBoxColumn";
-            this.roomTypeNameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // roomPricePerDayDataGridViewTextBoxColumn
-            // 
-            this.roomPricePerDayDataGridViewTextBoxColumn.DataPropertyName = "RoomPricePerDay";
-            this.roomPricePerDayDataGridViewTextBoxColumn.HeaderText = "RoomPricePerDay";
-            this.roomPricePerDayDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.roomPricePerDayDataGridViewTextBoxColumn.Name = "roomPricePerDayDataGridViewTextBoxColumn";
-            this.roomPricePerDayDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // stayDurationDataGridViewTextBoxColumn
-            // 
-            this.stayDurationDataGridViewTextBoxColumn.DataPropertyName = "StayDuration";
-            this.stayDurationDataGridViewTextBoxColumn.HeaderText = "StayDuration";
-            this.stayDurationDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.stayDurationDataGridViewTextBoxColumn.Name = "stayDurationDataGridViewTextBoxColumn";
-            this.stayDurationDataGridViewTextBoxColumn.ReadOnly = true;
-            this.stayDurationDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // roomCostDataGridViewTextBoxColumn
-            // 
-            this.roomCostDataGridViewTextBoxColumn.DataPropertyName = "RoomCost";
-            this.roomCostDataGridViewTextBoxColumn.HeaderText = "RoomCost";
-            this.roomCostDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.roomCostDataGridViewTextBoxColumn.Name = "roomCostDataGridViewTextBoxColumn";
-            this.roomCostDataGridViewTextBoxColumn.ReadOnly = true;
-            this.roomCostDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // serviceCostDataGridViewTextBoxColumn
-            // 
-            this.serviceCostDataGridViewTextBoxColumn.DataPropertyName = "ServiceCost";
-            this.serviceCostDataGridViewTextBoxColumn.HeaderText = "ServiceCost";
-            this.serviceCostDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.serviceCostDataGridViewTextBoxColumn.Name = "serviceCostDataGridViewTextBoxColumn";
-            this.serviceCostDataGridViewTextBoxColumn.ReadOnly = true;
-            this.serviceCostDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // totalCostDataGridViewTextBoxColumn
-            // 
-            this.totalCostDataGridViewTextBoxColumn.DataPropertyName = "TotalCost";
-            this.totalCostDataGridViewTextBoxColumn.HeaderText = "TotalCost";
-            this.totalCostDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.totalCostDataGridViewTextBoxColumn.Name = "totalCostDataGridViewTextBoxColumn";
-            this.totalCostDataGridViewTextBoxColumn.ReadOnly = true;
-            this.totalCostDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // paymentStatusDataGridViewTextBoxColumn
-            // 
-            this.paymentStatusDataGridViewTextBoxColumn.DataPropertyName = "PaymentStatus";
-            this.paymentStatusDataGridViewTextBoxColumn.HeaderText = "PaymentStatus";
-            this.paymentStatusDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.paymentStatusDataGridViewTextBoxColumn.Name = "paymentStatusDataGridViewTextBoxColumn";
-            this.paymentStatusDataGridViewTextBoxColumn.Width = 125;
-            // 
             // FormPayment
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -795,16 +680,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ServiceCost;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalCost;
         private System.Windows.Forms.DataGridViewTextBoxColumn PaymentStatus;
-        private System.Windows.Forms.DataGridViewTextBoxColumn reserIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn guestIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn guestNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn roomIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn roomTypeNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn roomPricePerDayDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn stayDurationDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn roomCostDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn serviceCostDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn totalCostDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn paymentStatusDataGridViewTextBoxColumn;
     }
 }

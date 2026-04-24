@@ -17,8 +17,16 @@ namespace Group4Ap
 		public FormReservations()
 		{
 			InitializeComponent();
-		} 
-		databaseConnection db = new databaseConnection();
+            dataGridView1.CurrentCellChanged += dataGridView1_CurrentCellChanged;
+        }
+        private void dataGridView1_CurrentCellChanged(object sender, EventArgs e)
+        {
+            if (dataGridView1.CurrentRow == null) { return; }
+
+            if (dataGridView1.CurrentRow.IsNewRow) { btnLuu.Enabled = true; btnSua.Enabled = false; }
+            else { btnLuu.Enabled = false; btnSua.Enabled = true; }
+        }
+        databaseConnection db = new databaseConnection();
 		private void FormReservation_Load(object sender, EventArgs e)
 		{
             showData();
@@ -33,17 +41,10 @@ namespace Group4Ap
             GIDField.ValueMember = "GuestID";
             RoomIDField.DataSource = db.GetTable("Select RoomID From Rooms");
             RoomIDField.ValueMember = "RoomID";
-
-
         }
 		private void showData()
 		{
 			this.reservationsTableAdapter.Fill(this.hotelManagementDataSet.Reservations);
-		}
-
-		private void btnTao_Click(object sender, EventArgs e)
-		{
-			
 		}
 
 		private void btnLuu_Click(object sender, EventArgs e)
@@ -118,17 +119,15 @@ namespace Group4Ap
         private void btnTao_Click_1(object sender, EventArgs e)
         {
             int nRowIndex = dataGridView1.Rows.Count - 1;
+            dataGridView1.FirstDisplayedScrollingRowIndex = nRowIndex;
+            dataGridView1.CurrentCell = dataGridView1.Rows[nRowIndex].Cells[0];
+
             RIDField.Text = "RES" + (nRowIndex + 1).ToString();
             GIDField.Text = "";
             RoomIDField.Text = "";
             PSField.Text = "";
             CIField.Text = "";
             COField.Text = "";
-            RIDField.Focus();
-            dataGridView1.ClearSelection();
-
-            dataGridView1.Rows[nRowIndex].Selected = true;
-            dataGridView1.FirstDisplayedScrollingRowIndex = nRowIndex;
         }
     }
 }

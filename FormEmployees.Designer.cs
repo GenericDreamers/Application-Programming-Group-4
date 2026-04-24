@@ -105,7 +105,7 @@
             this.DTField.Location = new System.Drawing.Point(23, 487);
             this.DTField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DTField.Name = "DTField";
-            this.DTField.Size = new System.Drawing.Size(535, 99);
+            this.DTField.Size = new System.Drawing.Size(535, 65);
             this.DTField.TabIndex = 88;
             // 
             // label2
@@ -116,7 +116,7 @@
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(197, 50);
+            this.label2.Size = new System.Drawing.Size(127, 32);
             this.label2.TabIndex = 85;
             this.label2.Text = "Điện thoại";
             // 
@@ -127,7 +127,7 @@
             this.EmailField.Location = new System.Drawing.Point(641, 487);
             this.EmailField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.EmailField.Name = "EmailField";
-            this.EmailField.Size = new System.Drawing.Size(544, 99);
+            this.EmailField.Size = new System.Drawing.Size(544, 65);
             this.EmailField.TabIndex = 83;
             // 
             // label1
@@ -138,7 +138,7 @@
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(113, 50);
+            this.label1.Size = new System.Drawing.Size(72, 32);
             this.label1.TabIndex = 84;
             this.label1.Text = "Email";
             // 
@@ -235,12 +235,12 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(77)))), ((int)(((byte)(91)))));
-            this.dataGridView1.Location = new System.Drawing.Point(56, 721);
+            this.dataGridView1.Location = new System.Drawing.Point(56, 727);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1620, 431);
+            this.dataGridView1.Size = new System.Drawing.Size(1620, 361);
             this.dataGridView1.TabIndex = 77;
             // 
             // EmployeeID
@@ -326,7 +326,7 @@
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label3.Size = new System.Drawing.Size(168, 50);
+            this.label3.Size = new System.Drawing.Size(108, 32);
             this.label3.TabIndex = 87;
             this.label3.Text = "Giới tính";
             // 
@@ -337,7 +337,7 @@
             this.TCField.Location = new System.Drawing.Point(641, 204);
             this.TCField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TCField.Name = "TCField";
-            this.TCField.Size = new System.Drawing.Size(544, 99);
+            this.TCField.Size = new System.Drawing.Size(544, 65);
             this.TCField.TabIndex = 75;
             // 
             // TDField
@@ -347,7 +347,7 @@
             this.TDField.Location = new System.Drawing.Point(24, 204);
             this.TDField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TDField.Name = "TDField";
-            this.TDField.Size = new System.Drawing.Size(535, 99);
+            this.TDField.Size = new System.Drawing.Size(535, 65);
             this.TDField.TabIndex = 72;
             // 
             // MNVField
@@ -357,7 +357,7 @@
             this.MNVField.Location = new System.Drawing.Point(24, 78);
             this.MNVField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MNVField.Name = "MNVField";
-            this.MNVField.Size = new System.Drawing.Size(535, 99);
+            this.MNVField.Size = new System.Drawing.Size(535, 65);
             this.MNVField.TabIndex = 70;
             // 
             // lblMaCode
@@ -368,7 +368,7 @@
             this.lblMaCode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMaCode.Name = "lblMaCode";
             this.lblMaCode.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblMaCode.Size = new System.Drawing.Size(161, 50);
+            this.lblMaCode.Size = new System.Drawing.Size(104, 32);
             this.lblMaCode.TabIndex = 76;
             this.lblMaCode.Text = "Tên cuối";
             // 
@@ -380,7 +380,7 @@
             this.lblHoTen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHoTen.Name = "lblHoTen";
             this.lblHoTen.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblHoTen.Size = new System.Drawing.Size(154, 50);
+            this.lblHoTen.Size = new System.Drawing.Size(101, 32);
             this.lblHoTen.TabIndex = 74;
             this.lblHoTen.Text = "Tên đầu";
             // 
@@ -392,7 +392,7 @@
             this.lblMSV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMSV.Name = "lblMSV";
             this.lblMSV.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblMSV.Size = new System.Drawing.Size(251, 50);
+            this.lblMSV.Size = new System.Drawing.Size(163, 32);
             this.lblMSV.TabIndex = 73;
             this.lblMSV.Text = "Mã nhân viên";
             // 
@@ -416,7 +416,7 @@
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label4.Size = new System.Drawing.Size(215, 50);
+            this.label4.Size = new System.Drawing.Size(140, 32);
             this.label4.TabIndex = 90;
             this.label4.Text = "Mã chức vụ";
             // 
@@ -428,7 +428,7 @@
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label5.Size = new System.Drawing.Size(190, 50);
+            this.label5.Size = new System.Drawing.Size(122, 32);
             this.label5.TabIndex = 92;
             this.label5.Text = "Ngày sinh";
             // 
@@ -440,7 +440,7 @@
             this.MCVField.Location = new System.Drawing.Point(641, 82);
             this.MCVField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MCVField.Name = "MCVField";
-            this.MCVField.Size = new System.Drawing.Size(544, 100);
+            this.MCVField.Size = new System.Drawing.Size(544, 67);
             this.MCVField.TabIndex = 93;
             // 
             // g1
@@ -463,7 +463,7 @@
             this.rBtnMale.Location = new System.Drawing.Point(8, 12);
             this.rBtnMale.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rBtnMale.Name = "rBtnMale";
-            this.rBtnMale.Size = new System.Drawing.Size(117, 41);
+            this.rBtnMale.Size = new System.Drawing.Size(74, 29);
             this.rBtnMale.TabIndex = 0;
             this.rBtnMale.Text = "Nam";
             this.rBtnMale.UseVisualStyleBackColor = true;
@@ -475,7 +475,7 @@
             this.rBtnFemale.Location = new System.Drawing.Point(166, 12);
             this.rBtnFemale.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rBtnFemale.Name = "rBtnFemale";
-            this.rBtnFemale.Size = new System.Drawing.Size(90, 41);
+            this.rBtnFemale.Size = new System.Drawing.Size(58, 29);
             this.rBtnFemale.TabIndex = 1;
             this.rBtnFemale.Text = "Nữ";
             this.rBtnFemale.UseVisualStyleBackColor = true;
@@ -489,7 +489,7 @@
             this.NSField.Location = new System.Drawing.Point(640, 345);
             this.NSField.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.NSField.Name = "NSField";
-            this.NSField.Size = new System.Drawing.Size(545, 99);
+            this.NSField.Size = new System.Drawing.Size(545, 65);
             this.NSField.TabIndex = 51;
             // 
             // label6
@@ -502,7 +502,7 @@
             this.label6.Location = new System.Drawing.Point(35, 25);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(770, 71);
+            this.label6.Size = new System.Drawing.Size(491, 46);
             this.label6.TabIndex = 120;
             this.label6.Text = "Danh sách thông tin nhân viên";
             // 
@@ -533,7 +533,7 @@
             // FormEmployees
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1740, 1200);
+            this.ClientSize = new System.Drawing.Size(1740, 1102);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnSua);

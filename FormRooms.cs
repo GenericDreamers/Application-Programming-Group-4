@@ -17,8 +17,16 @@ namespace Group4Ap
 		public FormRooms()
 		{
 			InitializeComponent();
-		}
-		databaseConnection db = new databaseConnection();
+            dataGridView1.CurrentCellChanged += dataGridView1_CurrentCellChanged;
+        }
+        private void dataGridView1_CurrentCellChanged(object sender, EventArgs e)
+        {
+            if (dataGridView1.CurrentRow == null) { return; }
+
+            if (dataGridView1.CurrentRow.IsNewRow) { btnLuu.Enabled = true; btnSua.Enabled = false; }
+            else { btnLuu.Enabled = false; btnSua.Enabled = true; }
+        }
+        databaseConnection db = new databaseConnection();
 		private void FormRooms_Load(object sender, EventArgs e)
 		{
 			showData();
@@ -43,17 +51,16 @@ namespace Group4Ap
 		}
 		private void btnTao_Click(object sender, EventArgs e)
 		{
-			MPField.Text = "";
+            int nRowIndex = dataGridView1.Rows.Count - 1;
+            dataGridView1.FirstDisplayedScrollingRowIndex = nRowIndex;
+            dataGridView1.CurrentCell = dataGridView1.Rows[nRowIndex].Cells[0];
+
+            MPField.Text = "";
 			MLPField.Text = "";
 			SPField.Text = "";
 			TField.Text = "";
 			MTField.Text = "";
 			MPField.Focus();
-			dataGridView1.ClearSelection();
-
-			int nRowIndex = dataGridView1.Rows.Count - 1;
-			dataGridView1.Rows[nRowIndex].Selected = true;
-			dataGridView1.FirstDisplayedScrollingRowIndex = nRowIndex;
 		}
 
 		private void btnLuu_Click(object sender, EventArgs e)

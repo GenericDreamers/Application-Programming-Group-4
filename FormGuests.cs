@@ -16,22 +16,29 @@ namespace Group4Ap
 		public FormGuests()
 		{
 			InitializeComponent();
-		}
-		databaseConnection db = new databaseConnection();
+            dataGridView1.CurrentCellChanged += dataGridView1_CurrentCellChanged;
+        }
+        private void dataGridView1_CurrentCellChanged(object sender, EventArgs e)
+        {
+            if (dataGridView1.CurrentRow == null) { return; }
+
+            if (dataGridView1.CurrentRow.IsNewRow) { btnLuu.Enabled = true; btnSua.Enabled = false; }
+            else { btnLuu.Enabled = false; btnSua.Enabled = true; }
+        }
+        databaseConnection db = new databaseConnection();
 		private void btnTao_Click(object sender, EventArgs e)
 		{
-			MKField.Text = "";
+            int nRowIndex = dataGridView1.Rows.Count - 1;
+            dataGridView1.FirstDisplayedScrollingRowIndex = nRowIndex;
+            dataGridView1.CurrentCell = dataGridView1.Rows[nRowIndex].Cells[0];
+
+            MKField.Text = "";
 			TDField.Text = "";
 			TCField.Text = "";
 			EmailField.Text = "";
 			DTField.Text = "";
 			DCField.Text = "";
 			MKField.Focus();
-			dataGridView1.ClearSelection();
-
-			int nRowIndex = dataGridView1.Rows.Count - 1;
-			dataGridView1.Rows[nRowIndex].Selected = true;
-			dataGridView1.FirstDisplayedScrollingRowIndex = nRowIndex;
 		}
 
 		private void btnLuu_Click(object sender, EventArgs e)

@@ -16,24 +16,24 @@ namespace Group4Ap
 		public FormInventory()
 		{
 			InitializeComponent();
+			dataGridView1.CurrentCellChanged += dataGridView1_CurrentCellChanged;
 		}
 		databaseConnection db = new databaseConnection();
 		private decimal originalInStock;
 		private void btnTao_Click(object sender, EventArgs e)
 		{
-			MVPField.Text = "";
-			TVPField.Text = "";
-			TKField.Text = "";
-			PPUField.Text = "";
-			DVField.Text = "";
-			LCField.Text = "";
-			MVPField.Focus();
-			dataGridView1.ClearSelection();
+            int nRowIndex = dataGridView1.Rows.Count - 1;
+            dataGridView1.FirstDisplayedScrollingRowIndex = nRowIndex;
+            dataGridView1.CurrentCell = dataGridView1.Rows[nRowIndex].Cells[0];
 
-			int nRowIndex = dataGridView1.Rows.Count - 1;
-			dataGridView1.Rows[nRowIndex].Selected = true;
-			dataGridView1.FirstDisplayedScrollingRowIndex = nRowIndex;
-		}
+            MVPField.Text = "";
+            TVPField.Text = "";
+            TKField.Text = "";
+            PPUField.Text = "";
+            DVField.Text = "";
+            LCField.Text = "";
+            MVPField.Focus();
+        }
 
 		private void btnLuu_Click(object sender, EventArgs e)
 		{
@@ -117,10 +117,17 @@ namespace Group4Ap
 		}
 		private void StoreOriginalInStock()
 		{
-			if (dataGridView1.CurrentRow != null)
+			if (dataGridView1.CurrentRow != null && !DBNull.Value.Equals(dataGridView1.CurrentRow.Cells[2].Value))
 			{
 				originalInStock = Convert.ToDecimal(dataGridView1.CurrentRow.Cells[2].Value ?? 0);
 			}
 		}
-	}
+        private void dataGridView1_CurrentCellChanged(object sender, EventArgs e)
+        {
+            if (dataGridView1.CurrentRow == null) { return; }
+
+            if (dataGridView1.CurrentRow.IsNewRow) { btnLuu.Enabled = true; btnSua.Enabled = false; }
+            else { btnLuu.Enabled = false; btnSua.Enabled = true; }
+        }
+    }
 }

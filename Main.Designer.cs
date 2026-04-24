@@ -227,7 +227,7 @@
             this.btnMore.Size = new System.Drawing.Size(470, 90);
             this.btnMore.TabIndex = 22;
             this.btnMore.Tag = "menu";
-            this.btnMore.Text = "Tìm kiếm  thông tin khác";
+            this.btnMore.Text = "Tìm kiếm thông tin khác";
             this.btnMore.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMore.Click += new System.EventHandler(this.btnMore_Click);
             // 

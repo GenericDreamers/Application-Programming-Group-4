@@ -294,12 +294,12 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(57)))), ((int)(((byte)(71)))));
-            this.dataGridView1.Location = new System.Drawing.Point(47, 678);
+            this.dataGridView1.Location = new System.Drawing.Point(47, 675);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 50;
-            this.dataGridView1.Size = new System.Drawing.Size(1652, 472);
+            this.dataGridView1.Size = new System.Drawing.Size(1652, 376);
             this.dataGridView1.TabIndex = 113;
             // 
             // reserIDDataGridViewTextBoxColumn

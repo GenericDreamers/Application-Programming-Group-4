@@ -40,20 +40,19 @@ namespace Group4Ap
 		}
 		private void btnTao_Click(object sender, EventArgs e)
 		{
-			MNVField.Text = "";
-			TDField.Text = "";
-			TCField.Text = "";
-			EmailField.Text = "";
-			DTField.Text = "";
-			NSField.Text = "";
-			MCVField.Text = "";
-			MNVField.Focus();
-			dataGridView1.ClearSelection();
+            int nRowIndex = dataGridView1.Rows.Count - 1;
+            dataGridView1.FirstDisplayedScrollingRowIndex = nRowIndex;
+            dataGridView1.CurrentCell = dataGridView1.Rows[nRowIndex].Cells[0];
 
-			int nRowIndex = dataGridView1.Rows.Count - 1;
-			dataGridView1.Rows[nRowIndex].Selected = true;
-			dataGridView1.FirstDisplayedScrollingRowIndex = nRowIndex;
-		}
+            MNVField.Text = "";
+            TDField.Text = "";
+            TCField.Text = "";
+            EmailField.Text = "";
+            DTField.Text = "";
+            NSField.Text = "";
+            MCVField.Text = "";
+            MNVField.Focus();
+        }
 
 		private void btnLuu_Click(object sender, EventArgs e)
 		{
@@ -91,7 +90,11 @@ namespace Group4Ap
 		private void DataGridView1_CurrentCellChanged(object sender, EventArgs e)
 		{
 			genderRadioSync();
-		}
+            if (dataGridView1.CurrentRow == null) { return; }
+
+            if (dataGridView1.CurrentRow.IsNewRow) { btnLuu.Enabled = true; btnSua.Enabled = false; }
+            else { btnLuu.Enabled = false; btnSua.Enabled = true; }
+        }
 		private void genderRadioSync()
 		{
 			if (dataGridView1.CurrentRow == null) return;
@@ -102,6 +105,5 @@ namespace Group4Ap
 				rBtnFemale.Checked = gender.Equals("F", StringComparison.OrdinalIgnoreCase);
 			}
 		}
-
-	}
+    }
 }

@@ -18,13 +18,13 @@ namespace Group4Ap
 			Application.SetCompatibleTextRenderingDefault(false);
 
             //test functions
-            //Application.Run(new FormLogin());
+            Application.Run(new FormLogin());
 
             //Application.Run(new FormAvailableRooms());
             //Application.Run(new FormEmployees());
             //Application.Run(new FormGuests());
             //Application.Run(new FormMiscSearch());
-            Application.Run(new FormPayment()); //xac nhan thanh toan khong nhan pending
+            //Application.Run(new FormPayment());
             //Application.Run(new FormReservations());
             //Application.Run(new FormRooms());
             //Application.Run(new FormServiceOrders());

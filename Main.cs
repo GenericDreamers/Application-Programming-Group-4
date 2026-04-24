@@ -20,7 +20,7 @@ namespace Group4Ap
         bool isCollapsed = false;
 
         Timer submenuTimer = new Timer();
-        bool isSubmenuCollapsed = false;
+        bool isSubmenuCollapsed = true;
 
         private Form currentChildForm;
 
@@ -85,12 +85,6 @@ namespace Group4Ap
                     btnMenu.Image = Properties.Resources.OutdentClose;
                 }
             }
-            if (panelMoreFeatures.Visible)
-            {
-                panelMoreFeatures.Height = 0;
-                isSubmenuCollapsed = true;
-                panelMoreFeatures.Visible = false;
-            }
         }
 
         private void openChildForm(Form childForm)
@@ -114,18 +108,21 @@ namespace Group4Ap
         {
             openChildForm(new FormGuests());
             SetActiveButton(btnKH);
+            if(!isCollapsed) menuTimer.Start();
         }
 
         private void btnNV_Click(object sender, EventArgs e)
         {
             openChildForm(new FormEmployees());
             SetActiveButton(btnNV);
+            if(!isCollapsed) menuTimer.Start();
         }
 
         private void btnKho_Click(object sender, EventArgs e)
         {
             openChildForm(new FormInventory());
             SetActiveButton(btnKho);
+            if(!isCollapsed) menuTimer.Start();
 
         }
 
@@ -133,36 +130,42 @@ namespace Group4Ap
         {
             openChildForm(new FormReservations());
             SetActiveButton(btnDatPhong);
+            if(!isCollapsed) menuTimer.Start();
         }
 
         private void btnPhong_Click(object sender, EventArgs e)
         {
             openChildForm(new FormRooms());
             SetActiveButton(btnPhong);
+            if(!isCollapsed) menuTimer.Start();
         }
 
         private void btnDV_Click(object sender, EventArgs e)
         {
             openChildForm(new FormServices());
             SetActiveButton(btnDV);
+            if(!isCollapsed) menuTimer.Start();
         }
 
         private void btnSDDV_Click(object sender, EventArgs e)
         {
             openChildForm(new FormServiceOrders());
-            SetActiveButton(btnSDDV);  
+            SetActiveButton(btnSDDV);
+            if(!isCollapsed) menuTimer.Start();
         }
 
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
             openChildForm(new FormPayment());
             SetActiveButton(btnThanhToan);
+            if(!isCollapsed) menuTimer.Start();
         }
 
         private void btnMore_Click(object sender, EventArgs e)
         {
             openChildForm(new FormMiscSearch());
             SetActiveButton(btnMore);
+            if(!isCollapsed) menuTimer.Start();
         }
 
         void SetActiveButton(Guna.UI2.WinForms.Guna2Button activeBtn)
@@ -187,18 +190,21 @@ namespace Group4Ap
         private void btnOtherFeatures_Click(object sender, EventArgs e)
         {
             submenuTimer.Start();
+            if (isCollapsed) menuTimer.Start();
         }
 
         private void btnPhongTrong_Click(object sender, EventArgs e)
         {
             openChildForm(new FormAvailableRooms());
             SetActiveButton(btnPhongTrong);
+            if(!isCollapsed) menuTimer.Start();
         }
 
         private void btnDoanhThu_Click(object sender, EventArgs e)
         {
             openChildForm(new FormServiceRevenue());
             SetActiveButton(btnDoanhThu);
+            if(!isCollapsed) menuTimer.Start();
         }
 
         private void SubmenuAnimation(object sender, EventArgs e)
@@ -269,6 +275,5 @@ namespace Group4Ap
                     m.Result = (IntPtr)HTBOTTOM;
             }
         }
-
     }
 }

@@ -28,8 +28,6 @@ namespace Group4Ap
 
 		private void FormPayment_Load(object sender, EventArgs e)
 		{
-            // TODO: This line of code loads data into the 'hotelManagementDataSet3.ReservationInvoiceDetails' table. You can move, or remove it, as needed.
-            
             showData();
 			RIDField.DataBindings.Add("Text", dataGridView1.DataSource, "ReserID");
 			GIDField.DataBindings.Add("Text", dataGridView1.DataSource, "GuestID");
@@ -50,6 +48,7 @@ namespace Group4Ap
 			if (PSField.Text == "Paid" || PSField.Text == "Cancelled")
 			{
 				btnLuu.Enabled = false;
+				Console.WriteLine("checkPS disabled button. Field has the text '" + PSField.Text + "'");
 			}
 			else
 			{

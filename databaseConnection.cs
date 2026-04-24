@@ -17,7 +17,8 @@ namespace DoDongHai
 
 		public void openConnection()
 		{
-			string sql = @"Data Source=A;Initial Catalog=HotelManagement;Integrated Security=True";
+			//Change this to your local server name
+			string sql = @"Data Source=localhost;Initial Catalog=HotelManagement;Integrated Security=True";
 			cnn = new SqlConnection(sql);
 			cnn.Open();
 		}

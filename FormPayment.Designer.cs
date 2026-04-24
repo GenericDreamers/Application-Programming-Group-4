@@ -63,10 +63,16 @@
             this.reservationInvoiceDetailsTableAdapter2 = new Group4Ap.HotelManagementDataSet2TableAdapters.ReservationInvoiceDetailsTableAdapter();
             this.lblTitle = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.reservationInvoiceDetailsBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reservationInvoiceDetailsBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
+            this.hotelManagementDataSet3 = new Group4Ap.HotelManagementDataSet3();
+            this.reservationInvoiceDetailsBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.reservationInvoiceDetailsBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this.reservationInvoiceDetailsTableAdapter3 = new Group4Ap.HotelManagementDataSet3TableAdapters.ReservationInvoiceDetailsTableAdapter();
+            this.ReserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GuestID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GuestName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RoomID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,11 +83,6 @@
             this.ServiceCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PaymentStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reservationInvoiceDetailsBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
-            this.hotelManagementDataSet3 = new Group4Ap.HotelManagementDataSet3();
-            this.reservationInvoiceDetailsBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
-            this.reservationInvoiceDetailsBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
-            this.reservationInvoiceDetailsTableAdapter3 = new Group4Ap.HotelManagementDataSet3TableAdapters.ReservationInvoiceDetailsTableAdapter();
             this.reserIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guestIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guestNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -93,7 +94,6 @@
             this.serviceCostDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalCostDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paymentStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnThoat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guestsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationInvoiceDetailsBindingSource3)).BeginInit();
@@ -421,6 +421,21 @@
             this.guna2Panel2.Size = new System.Drawing.Size(1628, 623);
             this.guna2Panel2.TabIndex = 113;
             // 
+            // btnThoat
+            // 
+            this.btnThoat.BackColor = System.Drawing.Color.White;
+            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThoat.Font = new System.Drawing.Font("Segoe UI Semibold", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(57)))), ((int)(((byte)(71)))));
+            this.btnThoat.Location = new System.Drawing.Point(968, 554);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(492, 54);
+            this.btnThoat.TabIndex = 115;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(57)))), ((int)(((byte)(71)))));
@@ -446,7 +461,7 @@
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
+            this.ReserID,
             this.GuestID,
             this.GuestName,
             this.RoomID,
@@ -475,14 +490,39 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1625, 253);
             this.dataGridView1.TabIndex = 114;
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
-            // Column1
+            // reservationInvoiceDetailsBindingSource7
             // 
-            this.Column1.DataPropertyName = "ReserID";
-            this.Column1.HeaderText = "Column1";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
+            this.reservationInvoiceDetailsBindingSource7.DataMember = "ReservationInvoiceDetails";
+            this.reservationInvoiceDetailsBindingSource7.DataSource = this.hotelManagementDataSet3;
+            // 
+            // hotelManagementDataSet3
+            // 
+            this.hotelManagementDataSet3.DataSetName = "HotelManagementDataSet3";
+            this.hotelManagementDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // reservationInvoiceDetailsBindingSource5
+            // 
+            this.reservationInvoiceDetailsBindingSource5.DataMember = "ReservationInvoiceDetails";
+            this.reservationInvoiceDetailsBindingSource5.DataSource = this.hotelManagementDataSet;
+            // 
+            // reservationInvoiceDetailsBindingSource6
+            // 
+            this.reservationInvoiceDetailsBindingSource6.DataMember = "ReservationInvoiceDetails";
+            this.reservationInvoiceDetailsBindingSource6.DataSource = this.hotelManagementDataSet1;
+            // 
+            // reservationInvoiceDetailsTableAdapter3
+            // 
+            this.reservationInvoiceDetailsTableAdapter3.ClearBeforeFill = true;
+            // 
+            // ReserID
+            // 
+            this.ReserID.DataPropertyName = "ReserID";
+            this.ReserID.HeaderText = "ReserID";
+            this.ReserID.MinimumWidth = 6;
+            this.ReserID.Name = "ReserID";
+            this.ReserID.Width = 125;
             // 
             // GuestID
             // 
@@ -568,30 +608,6 @@
             this.PaymentStatus.MinimumWidth = 6;
             this.PaymentStatus.Name = "PaymentStatus";
             this.PaymentStatus.Width = 125;
-            // 
-            // reservationInvoiceDetailsBindingSource7
-            // 
-            this.reservationInvoiceDetailsBindingSource7.DataMember = "ReservationInvoiceDetails";
-            this.reservationInvoiceDetailsBindingSource7.DataSource = this.hotelManagementDataSet3;
-            // 
-            // hotelManagementDataSet3
-            // 
-            this.hotelManagementDataSet3.DataSetName = "HotelManagementDataSet3";
-            this.hotelManagementDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // reservationInvoiceDetailsBindingSource5
-            // 
-            this.reservationInvoiceDetailsBindingSource5.DataMember = "ReservationInvoiceDetails";
-            this.reservationInvoiceDetailsBindingSource5.DataSource = this.hotelManagementDataSet;
-            // 
-            // reservationInvoiceDetailsBindingSource6
-            // 
-            this.reservationInvoiceDetailsBindingSource6.DataMember = "ReservationInvoiceDetails";
-            this.reservationInvoiceDetailsBindingSource6.DataSource = this.hotelManagementDataSet1;
-            // 
-            // reservationInvoiceDetailsTableAdapter3
-            // 
-            this.reservationInvoiceDetailsTableAdapter3.ClearBeforeFill = true;
             // 
             // reserIDDataGridViewTextBoxColumn
             // 
@@ -686,21 +702,6 @@
             this.paymentStatusDataGridViewTextBoxColumn.Name = "paymentStatusDataGridViewTextBoxColumn";
             this.paymentStatusDataGridViewTextBoxColumn.Width = 125;
             // 
-            // btnThoat
-            // 
-            this.btnThoat.BackColor = System.Drawing.Color.White;
-            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThoat.Font = new System.Drawing.Font("Segoe UI Semibold", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(57)))), ((int)(((byte)(71)))));
-            this.btnThoat.Location = new System.Drawing.Point(968, 554);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(492, 54);
-            this.btnThoat.TabIndex = 115;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = false;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
-            // 
             // FormPayment
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -782,7 +783,8 @@
         private HotelManagementDataSet3 hotelManagementDataSet3;
         private System.Windows.Forms.BindingSource reservationInvoiceDetailsBindingSource7;
         private HotelManagementDataSet3TableAdapters.ReservationInvoiceDetailsTableAdapter reservationInvoiceDetailsTableAdapter3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ReserID;
         private System.Windows.Forms.DataGridViewTextBoxColumn GuestID;
         private System.Windows.Forms.DataGridViewTextBoxColumn GuestName;
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomID;
@@ -793,7 +795,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ServiceCost;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalCost;
         private System.Windows.Forms.DataGridViewTextBoxColumn PaymentStatus;
-        private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.DataGridViewTextBoxColumn reserIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn guestIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn guestNameDataGridViewTextBoxColumn;
